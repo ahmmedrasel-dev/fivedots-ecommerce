@@ -1,0 +1,38 @@
+@media (max-width: 575px) {
+	.fivedots-btn {
+		padding: 5px 30px;
+		font-size: 16px;
+	}
+
+	.search-box {
+		display: none !important;
+	}
+	.parent-cat-item {
+		margin-bottom: 30px;
+	}
+
+	.child-cat-item {
+		margin-bottom: 30px;
+	}
+
+	.banner-heading {
+		font-size: 40px;
+	}
+
+	.banner-sub-heading {
+		padding: 10px 0px;
+	}
+
+	.banner-text {
+		font-size: 22px;
+	}
+
+	.banner-content-tow .banner-heading {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+
+	.banner-content-tow {
+		padding: 40px 0 50px 0;
+	}
+}
