@@ -65,6 +65,10 @@ img {
 	font-weight: 500;
 }
 
+a .icon {
+	width: 20px;
+}
+
 /* Navbar Css */
 .navbar-brand {
 	margin-right: 0;
@@ -109,7 +113,7 @@ img {
 .slider-content {
 	position: absolute;
 	top: 50%;
-	left: 15%;
+	left: 10%;
 	transform: translateY(-50%);
 }
 
@@ -139,7 +143,6 @@ img {
 }
 
 .parent-cat-banner {
-	height: 750px;
 	border-radius: 20px;
 }
 
@@ -153,28 +156,47 @@ img {
 }
 
 .parent-cat-content h2 {
-	font-size: 40px;
+	font-size: 45px;
 	font-family: "Jost";
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #fff;
-	padding: 10px 0;
+	padding: 15px 0;
 }
 
 .parent-cat-content h4,
-p {
+.parent-cat-content p {
 	font-size: 18px;
 	font-family: "Jost";
 	color: #fff;
 	font-weight: 400;
 }
 
-.child-cat-items {
-	margin-bottom: 50px;
+.child-category {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.child-cat-item h3 {
+	font-size: 20px;
+	font-family: "Jost";
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #222222;
+	padding: 10px 0px;
+	margin-top: 10px;
+}
+
+.child-cat-item a {
+	font-size: 18px;
+	font-family: "Jost";
+	font-weight: 500;
+	color: #686565;
 }
 
 .explore {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: "Jost";
 	font-weight: 400;
 }
@@ -243,4 +265,18 @@ p {
 	font-size: 22px;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+/* Footer Section Css */
+.footer-section {
+	padding: 70px 0px 20px;
+	color: #000;
+}
+
+.contact-info p {
+	padding: 5px 0px;
+}
+
+.contact-info ul li {
+	padding: 5px 0px;
 }
