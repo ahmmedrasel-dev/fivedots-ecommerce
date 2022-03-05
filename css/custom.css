@@ -295,6 +295,10 @@ a .icon {
 	color: orangered;
 }
 
+.old-price {
+	text-decoration: line-through;
+}
+
 /* Subscription Section CSS */
 
 #subscription {
