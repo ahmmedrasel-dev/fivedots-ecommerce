@@ -339,6 +339,144 @@ a .icon {
 	z-index: 999;
 }
 
+/* Product Detials Page Css */
+
+#product-detials {
+	margin-top: 20px;
+}
+
+.price {
+	font-size: 40px;
+	font-weight: 500;
+	color: #222;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 500;
+	color: #141619;
+}
+
+.summary {
+	font-size: 18px;
+	font-weight: 400;
+	color: #787474;
+	margin: 20px 0px;
+}
+
+.previous-price,
+.color,
+.size {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.product-color p,
+.product-size p {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.product-color {
+	margin-bottom: 20px;
+}
+
+.product-color ul li a {
+	margin-right: 10px;
+}
+
+.product-size ul li a {
+	padding: 15px;
+	background-color: #fff;
+	border: 2px solid rgba(34, 34, 34, 0.15);
+	margin-right: 10px;
+}
+
+.color-1 {
+	width: 18px;
+	height: 18px;
+	background-color: #f64d52;
+}
+
+.color-2 {
+	width: 18px;
+	height: 18px;
+	background-color: #00d9ff;
+}
+
+.color-3 {
+	width: 18px;
+	height: 18px;
+	background-color: #fc842d;
+}
+
+.color-4 {
+	width: 18px;
+	height: 18px;
+	background-color: #f64d52;
+}
+
+.qty-input {
+	width: 120px;
+	background-color: #fff;
+	border: 2px solid rgba(34, 34, 34, 0.15);
+	height: 60px;
+	border-radius: 0;
+}
+
+.qty-input:focus {
+	border: 2px solid rgba(34, 34, 34, 0.15);
+}
+
+.increase {
+	position: absolute;
+	left: 46px;
+	top: 0px;
+	border: 2px solid rgba(34, 34, 34, 0.15);
+	padding: 2px 30px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.decrease {
+	position: absolute;
+	left: 46px;
+	bottom: 0px;
+	border: 2px solid rgba(34, 34, 34, 0.15);
+	padding: 2px 30px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.cart-btn {
+	background-color: #222;
+	color: #fff;
+	padding: 15px 20px;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0px 20px;
+}
+
+.add-wishlist {
+	padding: 15px;
+	border: 2px solid rgba(34, 34, 34, 0.15);
+}
+
+.category {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 20px 0px;
+}
+
+.share-product p {
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 20px;
+}
+
 /* Footer Section Css */
 .footer-section {
 	padding: 70px 0px 20px;
