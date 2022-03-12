@@ -512,8 +512,12 @@ a .icon {
 	padding: 5px 0px;
 }
 
-a.active {
-	text-decoration: underline;
+.product-descriptio-title > .active {
+	border-bottom: 2px solid salmon;
+}
+
+.related-product-container {
+	box-shadow: 0px 0px 10px 0px #787474;
 }
 
 #related-category-product {
