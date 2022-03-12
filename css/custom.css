@@ -460,6 +460,12 @@ a .icon {
 	margin: 0px 20px;
 }
 
+.cart-btn:hover {
+	color: #222;
+	background-color: transparent;
+	border: 1px solid #222;
+}
+
 .add-wishlist {
 	padding: 15px;
 	border: 2px solid rgba(34, 34, 34, 0.15);
@@ -477,6 +483,42 @@ a .icon {
 	margin-right: 20px;
 }
 
+.installment-pament {
+	width: 420px;
+	padding: 15px 10px;
+	margin-top: 62px;
+}
+
+.installment-pament p {
+	font-size: 18px;
+	font-weight: 500;
+	color: #787474;
+}
+
+.installment-pament p a {
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: 500;
+	color: #787474;
+}
+
+.installment-pament a {
+	width: 130px;
+}
+
+.description-head {
+	background-color: rgba(34, 34, 34, 0.1);
+	margin-top: 30px;
+	padding: 5px 0px;
+}
+
+a.active {
+	text-decoration: underline;
+}
+
+#related-category-product {
+	margin-top: 50px;
+}
 /* Footer Section Css */
 .footer-section {
 	padding: 70px 0px 20px;
