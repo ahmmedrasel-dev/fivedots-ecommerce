@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&family=Montserrat:wght@700&display=swap");
 
+:root {
+	--text-color: #787474;
+	--hover-color: #000;
+	--button-color: #555;
+	--fivedotsbtn-color: #fff;
+	--fivedotsbtn-bcolor: #fff;
+	--navlink-color: #686565;
+	--wishlit-hover-color: rgb(228, 11, 11);
+	--section-title-color: #fff;
+	--product-title-color: #222222;
+	--current-price-color: #fff;
+	--discount-pcolor: orangered;
+}
 * {
 	margin: 0px;
 	padding: 0px;
@@ -18,7 +31,7 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	font-weight: lighter;
-	color: #555;
+	color: var(--button-color);
 }
 
 a:hover {
@@ -58,8 +71,8 @@ img {
 
 .fivedots-btn {
 	padding: 10px 40px;
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid var(--fivedotsbtn-bcolor);
+	color: var(--fivedotsbtn-color);
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -76,7 +89,7 @@ a .icon {
 .nav-item .nav-link {
 	font-size: 18px;
 	font-weight: 500;
-	color: #686565;
+	color: var(--navlink-color);
 }
 
 .icon::after {
@@ -282,7 +295,11 @@ a .icon {
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #fff;
+	color: var(--product-title-color);
+}
+
+.product-title:hover {
+	color: #000;
 }
 
 .new-price {
@@ -292,7 +309,7 @@ a .icon {
 }
 
 .discount {
-	color: orangered;
+	color: var(--discount-pcolor);
 }
 
 .old-price {
@@ -392,6 +409,11 @@ a .icon {
 	background-color: #fff;
 	border: 2px solid rgba(34, 34, 34, 0.15);
 	margin-right: 10px;
+	font-weight: 700;
+}
+
+.product-size ul li a:hover {
+	color: var(--hover-colorr);
 }
 
 .color-1 {
@@ -458,6 +480,7 @@ a .icon {
 	font-weight: 500;
 	font-size: 18px;
 	margin: 0px 20px;
+	transition: all linear 0.3s;
 }
 
 .cart-btn:hover {
@@ -469,6 +492,15 @@ a .icon {
 .add-wishlist {
 	padding: 15px;
 	border: 2px solid rgba(34, 34, 34, 0.15);
+}
+
+.wishlist i {
+	transition: color 0.3s;
+}
+
+.wishlist i:hover {
+	color: var(--wishlit-hover-color);
+	cursor: pointer;
 }
 
 .category {
@@ -492,7 +524,7 @@ a .icon {
 .installment-pament p {
 	font-size: 18px;
 	font-weight: 500;
-	color: #787474;
+	color: var(--text-color);
 }
 
 .installment-pament p a {
@@ -512,17 +544,100 @@ a .icon {
 	padding: 5px 0px;
 }
 
-.product-descriptio-title > .active {
-	border-bottom: 2px solid salmon;
+.related-product-container {
+	box-shadow: 0px 0px 1px 0px var(--product-title-color);
+	transition: box-shadow 0.3s;
 }
 
-.related-product-container {
-	box-shadow: 0px 0px 10px 0px #787474;
+.related-product-container:hover {
+	box-shadow: 0px 0px 5px 0px var(--product-title-color);
 }
 
 #related-category-product {
 	margin-top: 50px;
 }
+
+/* Category Product Shop Page */
+.product-content {
+	position: relative;
+}
+
+/* Discout Label */
+.label {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	top: 10px;
+	left: 10px;
+	background-color: rgb(238, 0, 0);
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	z-index: 999;
+}
+
+.select-control {
+	width: 200px;
+	padding: 10px;
+}
+
+.select-control * {
+	background: #fff !important;
+}
+
+.proudct-img {
+	position: relative;
+}
+
+/* Hover Product Imges */
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.15);
+	opacity: 0;
+	transition: all linear 0.3s;
+}
+
+.action {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.action span {
+	background-color: red;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.action span a i {
+	color: #fff;
+}
+
+.product-content:hover .overlay {
+	opacity: 1;
+}
+
+/* Filter By Price */
+
+.filter-by-price {
+	margin-top: 20px;
+}
+
+.filter-by-price li {
+	padding-bottom: 10px;
+}
+
+.filter-by-price span span {
+	margin-left: 10px;
+}
+
 /* Footer Section Css */
 .footer-section {
 	padding: 70px 0px 20px;
