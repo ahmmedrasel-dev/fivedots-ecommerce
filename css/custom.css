@@ -642,35 +642,48 @@ a .icon {
 
 /* Filter By Price */
 
+.filter-title {
+	padding: 10px 0px;
+	cursor: pointer;
+}
+.filter-title i {
+	font-size: 20px;
+	margin-right: 20px;
+}
+
 .filter-by-price {
 	margin-top: 20px;
 }
 
-.filter-by-price li {
+.filter-price li {
 	padding-bottom: 10px;
 }
 
-.filter-by-price span span {
+.filter-price span span {
 	margin-left: 10px;
 }
 
-.filter-by-color {
-	height: 300px;
-	overflow-x: scroll;
-}
-
-.filter-by-color {
-	margin-top: 20px;
-	background-color: #e9e9e9;
+.filter-by-color,
+.filter-by-brand {
+	background-color: #f6f6f6;
 	padding: 10px 0px;
 	border-radius: 10px;
 }
 
-.filter-by-color li {
+.filter-color,
+.filter-brand {
+	height: 200px;
+	margin-top: 20px;
+	overflow-x: scroll;
+}
+
+.filter-color li,
+.filter-brand li {
 	padding-bottom: 10px;
 }
 
-.filter-by-color span span {
+.filter-color span span,
+.filter-brand span span {
 	margin-left: 10px;
 }
 

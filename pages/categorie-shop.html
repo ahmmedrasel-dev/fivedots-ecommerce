@@ -118,13 +118,17 @@
 
       <div class="row">
         <!-- Right Siderbar -->
-        <div class="col-md-3">
+        <div class="col-md-3 siderbar">
           <aside>
             <div class="filter-container border p-3 rounded">
               <h4>Filter By</h4>
               <div class="filter-by-price ps-3">
-                <h5>Price</h5>
-                <ul class="filter-by-price">
+                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdlePrice()">
+                  <h5>Price</h5>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <ul class="filter-price" id="filter-by-price">
                   <li><a href=""><span><input type="checkbox"><span>Under 100 SAR</span></span></a></li>
                   <li><a href=""><span><input type="checkbox"><span>100 SAR To 200 SAR</span></span></a></li>
                   <li><a href=""><span><input type="checkbox"><span>200 SAR To 300 SAR</span></span></a></li>
@@ -140,8 +144,11 @@
               </div>
 
               <div class="filter-by-color mt-4 ps-3">
-                <h5>Color</h5>
-                <ul class="filter-by-color">
+                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdleColor()">
+                  <h5>Color</h5>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <ul class="filter-color" id="filter-color">
                   <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
                   <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
                   <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
@@ -153,6 +160,26 @@
                 </ul>
                 <button class="btn fivedots-filter-btn">Filter</button>
               </div>
+
+              <div class="filter-by-brand mt-4 ps-3">
+                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdleBrand()">
+                  <h5>Brand</h5>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <ul class="filter-brand" id="filter-brand">
+                  <li><a href=""><span><input type="checkbox"><span>Tommy</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Addidas</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Nike</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Reebok</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Puma</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Jack & Jones</span></span></a></li>
+                  <li><a href=""><span><input type="checkbox"><span>Calvan Kavin</span></span></a></li>
+                </ul>
+                <button class="btn fivedots-filter-btn">Filter</button>
+              </div>
+
             </div>
 
             <div class="color-filter-container">
@@ -185,12 +212,12 @@
                   <img class="img-fluid" src="../images/product-img-10.jpg" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -202,12 +229,12 @@
                   <img class="img-fluid" src="../images/product-img-2.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -221,12 +248,12 @@
                   <img class="img-fluid" src="../images/product-img-1.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -239,12 +266,12 @@
                   <img class="img-fluid" src="../images/product-img-1.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -257,12 +284,12 @@
                   <img class="img-fluid" src="../images/product-img-3.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -275,12 +302,12 @@
                   <img class="img-fluid" src="../images/product-img-4.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -293,12 +320,12 @@
                   <img class="img-fluid" src="../images/product-img-7.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -311,12 +338,12 @@
                   <img class="img-fluid" src="../images/product-img-6.png" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>
@@ -329,12 +356,12 @@
                   <img class="img-fluid" src="../images/product-img-5.jpeg" alt="product-12">
                   <div class="overlay">
                     <div class="action">
-                      <span><a href="#"><i class="fas fa-eye"></i></a></span>
+                      <span><a href="product-details.html"><i class="fas fa-eye"></i></a></span>
                       <span><a href="#"><i class="far fa-heart"></i></a></span>
                     </div>
                   </div>
                 </div>
-                <a href="#" class="product-title d-block mt-3">Mens Gray T-shirt</a>
+                <a href="product-details.html" class="product-title d-block mt-3">Mens Gray T-shirt</a>
                 <h3 class="new-price my-2">SAR <span>230.00</span></h3>
                 <p class="old-price text-danger">SAR 340</p>
               </div>

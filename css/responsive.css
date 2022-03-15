@@ -67,4 +67,14 @@
 	.installment-pament {
 		margin-top: 30px;
 	}
+
+	.siderbar {
+		margin-bottom: 30px;
+	}
+
+	.filter-price,
+	.filter-color,
+	.filter-brand {
+		display: none;
+	}
 }
