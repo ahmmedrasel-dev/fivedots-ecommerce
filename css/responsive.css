@@ -1,4 +1,24 @@
 
+@media (max-width: 1199.98px) {
+  .cart-heading {
+    display: grid;
+    grid-template-columns: 45% 15% 15% 15% 10%;
+    justify-content: center;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: 45% 15% 15% 15% 10%;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+  }
+
+  .citem-product-qty-inner {
+    left: -5%;
+  }
+
+  
+}
 
 @media (max-width: 991.98px) {
   .w-product-title,
@@ -33,9 +53,86 @@
     width: 20%;
     text-align: center;
   }
+
+  /* Cart Page Css  */
+
+  .cart-heading {
+    display: grid;
+    grid-template-columns: 32% 15% 23% 17% 13%;
+    justify-content: center;
+  }
+
+  .cart-item {
+    display: grid;
+    grid-template-columns: 32% 15% 22% 17% 13%;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+  }
+  .cart-product-title p,
+  .cart-item-tprice p,
+  .cart-item-price p {
+    font-size: 16px;
+  }
+
+  .cart-product-title img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .citem-product-qty-inner {
+    left: 5%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  /* Index Page */
+  .parent-cat-item {
+    margin-bottom: 30px;
+  }
+
+  .child-cat-item {
+    margin-bottom: 20px;
+  }
+
+  #banner-one {
+    margin-top: 30px;
+  }
+
+  #womens-category,
+  #mens-category {
+    margin-top: 70px;
+  }
+
+  #accesories-category {
+    margin: 0px 0px;
+  }
+
+  .banner-content-tow .banner-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .banner-content-tow .fivedots-btn {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .subscribe-content h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .subscribe-content p{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-info {
+    padding-right: 25px;
+  }
   /* wish-list style */
   .witem-product-qty-inner {
     position: relative;
@@ -113,6 +210,26 @@
 		padding: 40px 0 50px 0;
 	}
 
+  /* homepage Css  */
+
+  .parent-cat-content h2 {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+
+  .subscribe-content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subscribe-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 	/* Product-details-page */
 	.multi-img li a img {
 		width: 100px;
@@ -147,9 +264,19 @@
     width: 137px;
   }
 
+  .wislist-section-tile {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
   .witem-product-qty-inner {
     position: relative;
     left: 10%;
+  }
+
+  .cart-btn {
+    padding: 8px 15px;
+    font-size: 14px;
   }
 
   .cart-btn {
@@ -157,11 +284,27 @@
   }
 
   .witem-addtocart {
+    width: 40%;
     text-align: right;
   }
 
   .wishlist-title-sm {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
+  }
+
+  .wlist-item-price p{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .contact-info p,
+  .contact-info p a {
+    padding: 5px 0px;
+    font-size: 16px;
+  }
+
+  .contact-info ul li a {
+    font-size: 16px;
   }
 }

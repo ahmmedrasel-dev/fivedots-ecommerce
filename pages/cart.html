@@ -103,177 +103,88 @@
   </header>
 
   <main>
-    <section id="wishlist">
+    <section id="cart">
       <div class="container">
 
         <!-- Bradcum Here -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+            <li class="breadcrumb-item"><a href="#">Cart</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart-list</li>
           </ol>
         </nav>
 
-        <h3 class="wislist-section-tile">Favorites list Item:</h3>
-
         <div class="row">
           <div class="col-md-12">
-            <table class="wishlit-table d-none d-md-block">
-              <tr class="wishlit-header">
-                <th class="w-product-title">Product Name</th>
-                <th class="w-product-price">Unit Price</th>
-                <th class="w-product-qty">Quantity</th>
-                <th class="w-product-addtocart">Add To Cart</th>
-                <th class="w-remove">Remove</th>
-              </tr>
+            <div class="cart-container d-none d-md-block">
+              <div class="cart-heading">
+                <p>Product Name</p>
+                <p class="text-center">Price</p>
+                <p class="text-center">Quantity</p>
+                <p class="text-center">Total Price</p>
+                <p class="text-center">Remove</p>
+              </div>
 
-              <tr class="wishlist-body">
-                <td class="witem-product-name">
-                  <img src="../images/wishlit-img.jpeg" alt="">
-                  <p>Etiam rhoncus</p>
-                </td>
-                <td class="witem-product-price">
-                  <p>SAR 130.00</p>
-                </td>
-
-                <td class="witem-product-qty">
-                  <div class="witem-product-qty-inner">
-                    <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
-                    <span class="increase"><i class="fas fa-caret-up"></i></span>
-                    <span class="decrease"><i class="fas fa-caret-down"></i></span>
+              <div class="cart-item-container">
+                <div class="cart-item">
+                  <div class="cart-product-title p-3">
+                    <img src="../images/wishlit-img.jpeg" alt="">
+                    <p class="">Lorem ipsum dolor sit amet.</p>
                   </div>
-                </td>
-
-                <td class="witem-addtocart">
-                  <a href="#" class="cart-btn">add to cart</a>
-                </td>
-
-                <td class="witem-remove">
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </td>
-              </tr>
-
-              <tr class="wishlist-body">
-                <td class="witem-product-name">
-                  <img src="../images/wishlit-img.jpeg" alt="">
-                  <p>Etiam rhoncus</p>
-                </td>
-                <td class="witem-product-price">
-                  <p>SAR 130.00</p>
-                </td>
-
-                <td class="witem-product-qty">
-                  <div class="witem-product-qty-inner">
-                    <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
-                    <span class="increase"><i class="fas fa-caret-up"></i></span>
-                    <span class="decrease"><i class="fas fa-caret-down"></i></span>
+                  <div class="cart-item-price text-center">
+                    <p>SAR 100.00</p>
                   </div>
-                </td>
-
-                <td class="witem-addtocart">
-                  <a href="#" class="cart-btn">add to cart</a>
-                </td>
-
-                <td class="witem-remove">
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </td>
-              </tr>
-
-              <tr class="wishlist-body">
-                <td class="witem-product-name">
-                  <img src="../images/wishlit-img.jpeg" alt="">
-                  <p>Etiam rhoncus</p>
-                </td>
-                <td class="witem-product-price">
-                  <p>SAR 130.00</p>
-                </td>
-
-                <td class="witem-product-qty">
-                  <div class="witem-product-qty-inner">
-                    <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
-                    <span class="increase"><i class="fas fa-caret-up"></i></span>
-                    <span class="decrease"><i class="fas fa-caret-down"></i></span>
-                  </div>
-                </td>
-
-                <td class="witem-addtocart">
-                  <a href="#" class="cart-btn">add to cart</a>
-                </td>
-
-                <td class="witem-remove">
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                </td>
-              </tr>
-
-            </table>
-
-            <div class="wishlist-sm-table d-block d-md-none">
-              <div class="wishlist-item border mb-4">
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Name:</div>
-                  <div class="d-flex flex-row-reverse justify-content-between align-items-center">
-                    <img class="w-25" src="../images/wishlit-img.jpeg" alt="">
-                    <p class="wishlist-title-sm ">Etiam rhoncus</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Price:</div>
-                  <div class="wlist-item-price">
-                    <p>SAR 130.00</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Quantity:</div>
-                  <div class="witem-product-qty">
-                    <div class="witem-product-qty-inner">
+                  <div class="cart-item-qty text-center p-3">
+                    <div class="citem-product-qty-inner">
                       <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
                       <span class="increase"><i class="fas fa-caret-up"></i></span>
                       <span class="decrease"><i class="fas fa-caret-down"></i></span>
                     </div>
                   </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center p-2">
-                  <div>Add To Cart:</div>
-                  <div class="witem-addtocart">
-                    <a href="#" class="cart-btn">add to cart</a>
+                  <div class="cart-item-tprice text-center p3">
+                    <p>SAR 100.00</p>
                   </div>
-                </div>
-              </div>
+                  <div class="cart-item-remove text-center p3">
+                    <button class="btn btn-danger">Delete</button>
+                  </div>
 
-              <div class="wishlist-item border mb-4">
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Name:</div>
-                  <div class="d-flex flex-row-reverse justify-content-between align-items-center">
-                    <img class="w-25" src="../images/wishlit-img.jpeg" alt="">
-                    <p class="wishlist-title-sm">Etiam rhoncus</p>
-                  </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Price:</div>
-                  <div class="wlist-item-price">
-                    <p>SAR 130.00</p>
+
+                <div class="cart-item">
+
+                  <div class="cart-product-title p-3">
+                    <img src="../images/wishlit-img.jpeg" alt="">
+                    <p class="">Lorem ipsum dolor sit amet.</p>
                   </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center border-bottom p-2">
-                  <div>Product Quantity:</div>
-                  <div class="witem-product-qty">
-                    <div class="witem-product-qty-inner">
+
+                  <div class="cart-item-price text-center">
+                    <p>SAR 100.00</p>
+                  </div>
+
+                  <div class="cart-item-qty text-center p-3">
+                    <div class="citem-product-qty-inner">
                       <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
                       <span class="increase"><i class="fas fa-caret-up"></i></span>
                       <span class="decrease"><i class="fas fa-caret-down"></i></span>
                     </div>
                   </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center p-2">
-                  <div>Add To Cart:</div>
-                  <div class="witem-addtocart">
-                    <a href="#" class="cart-btn">add to cart</a>
+
+                  <div class="cart-item-tprice text-center p3">
+                    <p>SAR 100.00</p>
                   </div>
+
+                  <div class="cart-item-remove text-center p3">
+                    <button class="btn btn-danger">Delete</button>
+                  </div>
+
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
       </div>
     </section>
   </main>
