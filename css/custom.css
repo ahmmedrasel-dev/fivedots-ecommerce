@@ -10,6 +10,7 @@
 	--wishlit-hover-color: rgb(228, 11, 11);
 	--section-title-color: #fff;
 	--product-title-color: #222222;
+	--product-title-color-home: #fff;
 	--current-price-color: #fff;
 	--discount-pcolor: orangered;
 }
@@ -305,6 +306,13 @@ a .icon {
 	border: 2px solid #686565;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+.product-title-home {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--product-title-color-home);
 }
 
 .product-title {
@@ -685,6 +693,88 @@ a .icon {
 .filter-color span span,
 .filter-brand span span {
 	margin-left: 10px;
+}
+
+/* Wislist Item Css */
+
+.wislist-section-tile {
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+#wishlist {
+	margin-top: 50px;
+}
+
+.wishlit-table {
+	width: 100%;
+}
+
+.wishlit-header th {
+	border: 1px solid black;
+	padding: 15px 10px;
+}
+
+.wishlist-body {
+	border-bottom: 1px solid black;
+}
+
+.wishlist-body td {
+	padding: 15px;
+}
+
+.w-product-title,
+.witem-product-name {
+	width: 470px;
+}
+
+.witem-product-name {
+	width: 470px;
+	display: flex;
+	align-items: center;
+}
+
+.w-product-price,
+.w-product-qty,
+.w-remove,
+.witem-product-price,
+.witem-remove {
+	width: 200px;
+	text-align: center;
+}
+
+.witem-product-qty {
+	width: 200px;
+}
+
+
+
+.witem-product-qty-inner {
+	position: relative;
+	left: 12%;
+}
+
+.w-product-addtocart,
+.witem-addtocart {
+	width: 300px;
+	text-align: center;
+}
+
+.witem-product-name img {
+	width: 90px;
+	height: 90px;
+}
+
+.witem-product-name p {
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 20px;
+}
+
+.witem-product-price h3 {
+	font-size: 18px;
+	font-weight: 500;
 }
 
 /* Footer Section Css */
