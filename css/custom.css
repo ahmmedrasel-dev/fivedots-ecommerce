@@ -66,6 +66,11 @@ p {
 	color: #555;
 }
 
+.container {
+  max-width: 1220px;
+  height: auto;
+}
+
 img {
 	width: 100%;
 }
@@ -74,7 +79,7 @@ img {
 	padding: 10px 40px;
 	border: 2px solid var(--fivedotsbtn-bcolor);
 	color: var(--fivedotsbtn-color);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 }
 
@@ -82,7 +87,7 @@ img {
 	padding: 10px 40px;
 	border: 2px solid var(--fivedotsbtn-bcolor);
 	color: var(--fivedotsbtn-color);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	background-color: #000;
 	border-radius: 5px;
@@ -98,21 +103,164 @@ a .icon {
 	width: 20px;
 }
 
-/* Navbar Css */
+
+/* Navbar Style */
+nav {
+  width: 100%;
+  height: 50px;
+}
+
+.main_menu {
+  display: flex;
+  line-height: 50px;
+}
+
+
+.main_menu .home:hover>i {
+  color: #ED1B35;
+}
+
+.main_menu li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.main_menu li:last-child {
+  margin-right: 0;
+}
+
+.main_menu li>a {
+  text-transform: capitalize;
+  color: var(--navlink-color);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  font-weight: lighter;
+  font-weight: 500;
+}
+
+.main_menu li a i {
+  color: var(--navlink-color);
+}
+
+.main_menu li:hover>a {
+  text-decoration: none;
+  color: #ED1B35;
+}
+
+.main_menu .home:hover::after {
+  transform: scale(0);
+}
+
+/*====MEGA_MENU START====*/
+.mega_full {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+}
+
+.menu .static {
+  position: static;
+}
+
+.mega_item {
+  margin-bottom: 20px;
+}
+
+.mega_item .menu_title {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #000;
+  border-bottom: 1px solid #999;
+  margin-right: 0;
+}
+
+.mega_item li {
+  line-height: 30px;
+}
+
+.mega_item li>a {
+  text-transform: capitalize;
+  color: #353535;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  font-weight: lighter;
+}
+
+.mega_item li:hover>a {
+  font-weight: 600;
+  color: #ff0101;
+  padding-left: 5px;
+}
+
+.main_menu li:hover .mega_full {
+  opacity: 1;
+  visibility: visible;
+} 
+
+/*====MEGA_MENU END====*/
+
+nav .main_menu li a.active_menu {
+  color: #ED1B35;
+}
+
+.menu_fix {
+  z-index: 9999;
+  animation: menu_animate 1s;
+  position: static;
+  top: 75px;
+}
+
+.menu_fix i {
+  font-size: 25px;
+}
+
+
+ @keyframes menu_animate {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--navlink-color);
+}
+
 .navbar-brand {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-
-.nav-item .nav-link {
-	font-size: 18px;
-	font-weight: 500;
-	color: var(--navlink-color);
+.hs-menubar.sticky {
+  display: none;
 }
+
+/*====================
+      NAV END
+=====================*/
+
+
 
 .icon::after {
 	font-family: "Font Awesome 5 Free";
@@ -126,7 +274,7 @@ a .icon {
 .section-title {
 	text-transform: uppercase;
 	font-size: 48px;
-}
+} */
 
 /* Slider Css */
 
@@ -202,7 +350,7 @@ a .icon {
 
 .parent-cat-content h4,
 .parent-cat-content p {
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	font-weight: 400;
 }
@@ -223,13 +371,13 @@ a .icon {
 }
 
 .child-cat-item a {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #686565;
 }
 
 .explore {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 }
 
@@ -314,14 +462,14 @@ a .icon {
 }
 
 .product-title-home {
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	color: var(--product-title-color-home);
 }
 
 .product-title {
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	color: var(--product-title-color);
@@ -368,7 +516,7 @@ a .icon {
 }
 
 .subscribe-content p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #413b3b;
 	margin-top: 20px;
@@ -404,7 +552,7 @@ a .icon {
 }
 
 .summary {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #787474;
 	margin: 20px 0px;
@@ -413,14 +561,14 @@ a .icon {
 .previous-price,
 .color,
 .size {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
 
 .product-color p,
 .product-size p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
@@ -446,26 +594,26 @@ a .icon {
 }
 
 .color-1 {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	background-color: #f64d52;
 }
 
 .color-2 {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	background-color: #00d9ff;
 }
 
 .color-3 {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	background-color: #fc842d;
 }
 
 .color-4 {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	background-color: #f64d52;
 }
 
@@ -507,7 +655,7 @@ a .icon {
 	padding: 15px 20px;
 	text-transform: capitalize;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0px 20px;
 	transition: all linear 0.3s;
 }
@@ -533,13 +681,13 @@ a .icon {
 }
 
 .category {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	margin: 20px 0px;
 }
 
 .share-product p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	margin-right: 20px;
 }
@@ -551,14 +699,14 @@ a .icon {
 }
 
 .installment-pament p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	color: var(--text-color);
 }
 
 .installment-pament p a {
 	text-decoration: underline;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #787474;
 }
@@ -602,7 +750,7 @@ a .icon {
 	background-color: rgb(238, 0, 0);
 	color: rgb(255, 255, 255);
 	font-weight: 700;
-	z-index: 999;
+	z-index: 1;
 }
 
 .select-control {
@@ -708,10 +856,6 @@ a .icon {
 	margin-bottom: 20px;
 }
 
-#wishlist {
-	margin-top: 50px;
-}
-
 .wishlit-table {
 	width: 100%;
 }
@@ -770,13 +914,13 @@ a .icon {
 }
 
 .witem-product-name p {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	padding-left: 20px;
 }
 
 .witem-product-price h3 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 }
 
@@ -784,12 +928,12 @@ a .icon {
 
 .cart-heading {
   display: grid;
-  grid-template-columns: 50% 15% 13% 12% 10%;
+  grid-template-columns: 30% 10% 10% 15% 13% 12% 10%;
   justify-content: center;
 }
 
 .cart-heading p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   border: 1px solid #787474;
   padding: 10px;
@@ -797,7 +941,7 @@ a .icon {
 
 .cart-item{
   display: grid;
-  grid-template-columns: 50% 15% 13% 12% 10%;
+  grid-template-columns: 30% 10% 10% 15% 13% 12% 10%;
   align-items: center;
   border-bottom: 1px solid rgb(218, 218, 218);
 }
@@ -809,13 +953,15 @@ a .icon {
 
 .cart-product-title p,
 .cart-item-tprice p,
-.cart-item-price p {
-  font-size: 18px;
+.cart-item-price p,
+.cart-item-size p,
+.cart-item-color p {
+  font-size: 16px;
   font-weight: 500;
 }
 
 .cart-product-title img {
-  width: 90px;
+  width: 50px;
   margin-right: 20px;
 }
 
@@ -844,7 +990,7 @@ a .icon {
 .contact-info p,
 .contact-info p a {
 	padding: 5px 0px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #0e1114;
 }
@@ -854,7 +1000,7 @@ a .icon {
 }
 
 .contact-info ul li a {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #0e1114;
 }

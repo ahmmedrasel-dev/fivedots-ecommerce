@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Product Title goes here.</title>
+  <title>5dots Multi-vendor E-commerces</title>
   <!-- Font Awesome Icon -->
   <script src="https://kit.fontawesome.com/b868f71921.js" crossorigin="anonymous"></script>
   <!-- Bootstrap Css link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Nice Select -->
-  <link rel="stylesheet" href="../css/nice-select.css">
+  <!-- Jquary Css Link -->
+  <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
+
+  <!-- hs Menu CSS-->
+  <link rel="stylesheet" href="../css/hs-menu.min.css" />
+
   <!-- Custom Css Link -->
   <link rel="stylesheet" href="../css/custom.css">
   <!-- Responsive Css Link -->
@@ -20,75 +24,390 @@
 </head>
 
 <body>
+
   <header>
     <!-- Navbar Top Start Here -->
-    <nav class="nav-top">
+    <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
-        <form action="" class="search-box d-flex align-items-center border-bottom py-1">
+        <form action="" class="search-box-desk d-flex align-items-center border-bottom py-1 order-sm-1 order-1">
           <div class="search-icon">
             <img class="img-fluid" src="../images/search-normal.png" alt="search-icon">
           </div>
           <input class="search border-0 p-2 ms-1" type="search" id="" placeholder="Search items...">
         </form>
         <!-- Company Logo -->
-        <a class="navbar-brand" href="../index.html"><span class="fs-2">5dots</span></a>
+        <a class="navbar-brand order-0 order-sm-0" href="../index.html"><span class="fs-2">5dots</span></a>
         <!-- User Action -->
-        <ul class="d-flex align-items-center">
+        <ul class="d-flex align-items-center nav-right order-3 order-sm-3">
           <li class="ps-2"><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
+          <li class="ps-2"><a href="pages/wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
+          <li class="ps-2"><a href="pages/cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+
     <!-- Navbar Start Here -->
-    <nav class="navbar navbar-expand-md bg-light">
+    <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="menu_fix"><i class="fas fa-bars"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        <div class="collapse navbar-collapse mobile-menu" id="navbarNavDropdown">
+          <ul class="main_menu navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html" class="home">Home </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Clothes</a>
+            <li class="nav-item"><a class="nav-link" href="product.html">new arrival</a></li>
+            <li class="static nav-item"><a class="nav-link " href="#">Clothes <i class="fas fa-angle-down"></i></a>
+              <div class="mega_full">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">sofa</li>
+                      <li><a href="#">All Sofa</a></li>
+                      <li><a href="#">Fabric Sofa</a></li>
+                      <li><a href="#">Wooden Sofa</a></li>
+                      <li><a href="#">L-Shaped Sofa</a></li>
+                      <li><a href="#">Leather Sofa</a></li>
+                      <li><a href="#">Rexin Sofa</a></li>
+                      <li><a href="#">Sofa-Bed</a></li>
+                      <li><a href="#">3-Seater Sofa</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">center table</li>
+                      <li><a href="#">All Center Table</a></li>
+                      <li><a href="#">Center Table with Glass Top</a></li>
+                      <li><a href="#">Center Table with Wooden Top</a></li>
+                      <li><a href="#">Center Table with Storage</a></li>
+                      <li><a href="#">Corner Table</a></li>
+                      <li><a href="#">Modular Center Table</a></li>
+                      <li><a href="#">Non-Lacquer Center Table</a></li>
+                      <li><a href="#">Nested Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">tv cabinet</li>
+                      <li><a href="#">All TV Cabinet</a></li>
+                      <li><a href="#">TV Cabinet with Hanging Unit</a></li>
+                      <li><a href="#">Low Height TV Cabinet</a></li>
+                      <li><a href="#">Modular TV Cabinet</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">divan</li>
+                      <li><a href="#">All Divan</a></li>
+                      <li><a href="#">Fabric Divan</a></li>
+                      <li><a href="#">Wooden Divan</a></li>
+                      <li><a href="#">Modular Divan</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">open shelves</li>
+                      <li><a href="#">All Open Shelves</a></li>
+                      <li><a href="#">Book Shelves</a></li>
+                      <li><a href="#">Wall Shelves</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">chair</li>
+                      <li><a href="#">Rocking Chair</a></li>
+                      <li><a href="#">Easy Chair</a></li>
+                      <li><a href="#">Lobby Chair</a></li>
+                      <li><a href="#">Accent Chair</a></li>
+                      <li><a href="#">Foot Stool</a></li>
+                      <li><a href="#">Telephone Seater</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">shoe rack</li>
+                      <li><a href="#">All Shoe Rack</a></li>
+                      <li><a href="#">Storage</a></li>
+                      <li><a href="#">Shoe Rack with Mirror</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Cradle</li>
+                      <li><a href="#">All Cradle</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">File Rack</li>
+                      <li><a href="#"> All File Rack</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">lobby</li>
+                      <li><a href="#">All Set</a></li>
+                      <li><a href="#">Lobby Table</a></li>
+                      <li><a href="#">Lobby Chair</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">stand</li>
+                      <li><a href="#"> Hanger Stand</a></li>
+                      <li><a href="#">Iron Stand</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Beauty</a>
+            <li class="static nav-item"><a class="nav-link " href="#">Beauty <i class="fas fa-angle-down"></i></a>
+              <div class="mega_full">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Bed</li>
+                      <li><a href="#">All Bed</a></li>
+                      <li><a href="#"> King Size Bed</a></li>
+                      <li><a href="#">Wooden Sofa</a></li>
+                      <li><a href="#">Queen Size Bed</a></li>
+                      <li><a href="#">Semi Double Bed</a></li>
+                      <li><a href="#">Bed with Storage</a></li>
+                      <li><a href="#">Sofa cum Bed</a></li>
+                      <li><a href="#">Folding Bed</a></li>
+                      <li><a href="#">Folding Wall Mounted Bed</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Wardrobe</li>
+                      <li><a href="#">All Wardrobe</a></li>
+                      <li><a href="#">Wardrobe with Mirror</a></li>
+                      <li><a href="#">Modular Wardrobe</a></li>
+                      <li><a href="#">Non-Lacquer 2-Door Wardrobe</a></li>
+                      <li><a href="#">Non-Lacquer 3-Door Wardrobe</a></li>
+                      <li><a href="#">Non-Lacquer 4-Door Wardrobe</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Chest Of Drawers</li>
+                      <li><a href="#">All Chest of Drawers</a></li>
+                      <li><a href="#">Non-Lacquer Chest of Drawers</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title"> Reading Table</li>
+                      <li><a href="#">All Reading Table</a></li>
+                      <li><a href="#">Folding Reading Table</a></li>
+                      <li><a href="#">Reading Table Chair</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Dressing Table</li>
+                      <li><a href="#">All Dressing Table</a></li>
+                      <li><a href="#">Non-Lacquer Dressing Table</a></li>
+                      <li><a href="#">Dressing Table Seater</a></li>
+                      <li><a href="#">Dressing Table with Storage</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Bed-side Table</li>
+                      <li><a href="#">All Bed Side Table</a></li>
+                      <li><a href="#">Low Height Bed-side Table</a></li>
+                      <li><a href="#">Non-Lacquer Bed Side Table</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Almirah</li>
+                      <li><a href="#">All Household Almirah</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Mattress</li>
+                      <li><a href="#">All Mattress</a></li>
+                      <li><a href="#">King Size Mattress</a></li>
+                      <li><a href="#">Queen Size Mattress</a></li>
+                      <li><a href="#"> Semi Double Mattress</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Echo Beauty</a>
+            <li class="static nav-item"><a class="nav-link " href="#">Perfumes <i class="fas fa-angle-down"></i></a>
+              <div class="mega_full">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <ul class="mega_item">
+                      <li class="menu_title">Dining</li>
+                      <li><a href="#"> All Dining Table Set</a></li>
+                      <li><a href="#">8-Seater Dining Table Set</a></li>
+                      <li><a href="#">6-Seater Dining Table Set</a></li>
+                      <li><a href="#">4-Seater Dining Table Set</a></li>
+                      <li><a href="#">Round-Shaped Dining Table Set</a></li>
+                      <li><a href="#">Dining Table Set with Glass Top</a></li>
+                      <li><a href="#">Dining Table Set with Wooden Top</a></li>
+                      <li><a href="#">Dining Table Set with Wall Hanging</a></li>
+                      <li><a href="#">Extendable Dining Table Set</a></li>
+                      <li><a href="#">All Dining Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Chair</li>
+                      <li><a href="#">All Dining Chair</a></li>
+                      <li><a href="#">Wooden Dining Chair</a></li>
+                      <li><a href="#">Fabric Dining Chair</a></li>
+                      <li><a href="#">Wooden Bench</a></li>
+                      <li><a href="#">Step Ladder-Chair</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Cafeteria</li>
+                      <li><a href="#">All Cafeteria Set</a></li>
+                      <li><a href="#">Cafeteria Table</a></li>
+                      <li><a href="#">Fabric Dining Chair</a></li>
+                      <li><a href="#">Cafeteria Chair</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Dinner Wagon</li>
+                      <li><a href="#">All Dinner Wagon</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Showcase</li>
+                      <li><a href="#">All Showcase</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Tea Trolley</li>
+                      <li><a href="#">All Tea Trolley</a></li>
+                      <li><a href="#">Wooden Tea Trolley</a></li>
+                      <li><a href="#">Serving Tray</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Mini Cabinet</li>
+                      <li><a href="#">All Mini Cabinet</a></li>
+                      <li><a href="#">Bar Cabinet</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Perfumes</a>
+            <li class="static nav-item"><a class="nav-link " href="#">Accesories <i class="fas fa-angle-down"></i></a>
+              <div class="mega_full">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Sofa</li>
+                      <li><a href="#">All Sofa</a></li>
+                      <li><a href="#">Fabric Sofa</a></li>
+                      <li><a href="#">Wooden Sofa</a></li>
+                      <li><a href="#">Rexin Sofa</a></li>
+                      <li><a href="#">3-Seater Sofa</a></li>
+                      <li><a href="#">2-Seater Sofa</a></li>
+                      <li><a href="#"> Single Seater</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Side Rack</li>
+                      <li><a href="#">All Side Rack</a></li>
+                      <li><a href="#">Lacquer Side Rack</a></li>
+                      <li><a href="#">Non-Lacquer Side Rack</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Conference Table</li>
+                      <li><a href="#">All Conference Table</a></li>
+                      <li><a href="#">Lacquer Conference Table</a></li>
+                      <li><a href="#">Non-Lacquer Conference Table</a></li>
+                      <li><a href="#">Modular Conference Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Swivel Chair</li>
+                      <li><a href="#">Chief Executive Chair</a></li>
+                      <li><a href="#">Mid-Level Executive Chair</a></li>
+                      <li><a href="#"> Executive Chair</a></li>
+                    </ul>
+                    <ul class="mega_item">
+                      <li class="menu_title">Fixed Chair</li>
+                      <li><a href="#">All Fixed Chair</a></li>
+                      <li><a href="#">Visitor Chair</a></li>
+                      <li><a href="#">Auditorium Chair</a></li>
+                      <li><a href="#">Group Chairr</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Executive Table</li>
+                      <li><a href="#">All Executive Table</a></li>
+                      <li><a href="#">Lacquer Executive Table</a></li>
+                      <li><a href="#">Non-Lacquer Executive Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Office Almirah</li>
+                      <li><a href="#">All Office Almirah</a></li>
+                      <li><a href="#">Mild Steel Drawer Unit</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li class="menu_title">Computer Table</li>
+                      <li><a href="#">All Computer Table</a></li>
+                      <li><a href="#">Lacquer Computer Table</a></li>
+                      <li><a href="#">Non-Lacquer Computer Table</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Accessories</a>
+            <li class="static nav-item"><a class="nav-link " href="#">Electronics <i class="fas fa-angle-down"></i></a>
+              <div class="mega_full">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li><a href="#">All Institutional</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li><a href="#">Hotel &amp; Restaurant</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li><a href="#">Hospital</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li><a href="#">Academic</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <ul class="mega_item">
+                      <li><a href="#">Auditori</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link icon" href="#">Brands</a>
-            </li>
-
           </ul>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Mens</a>
+              <a class="nav-link active" aria-current="page" href="#">Men's</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Womens</a>
+              <a class="nav-link" href="#">Women's</a>
             </li>
-
           </ul>
         </div>
 
-        <div class="nav-item dropdown">
+        <div class="nav-item dropdown d-none d-sm-none d-md-none d-lg-block">
           <a class="nav-link dropdown-toggle" href="#" id="language" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Language
@@ -102,12 +421,537 @@
     </nav>
   </header>
 
+  <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
+  <nav class="hs-navigation">
+    <ul class="nav-links">
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>new arrival<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+          <li class="has-child">
+            <a href="product.html">all item</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>living <i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">sofa <i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">sofa 1</a> </li>
+              <li> <a href="#1">sofa 2</a> </li>
+              <li> <a href="#1">sofa 3</a> </li>
+              <li> <a href="#1">sofa 4</a> </li>
+              <li> <a href="#1">sofa 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">center table <i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">center table 1 </a> </li>
+              <li> <a href="#1">center table 2 </a> </li>
+              <li> <a href="#1">center table 3 </a> </li>
+              <li> <a href="#1">center table 4 </a> </li>
+              <li> <a href="#1">center table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">tv cabinet<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">tv cabinet 1 </a> </li>
+              <li> <a href="#1">tv cabinet 2 </a> </li>
+              <li> <a href="#1">tv cabinet 3 </a> </li>
+              <li> <a href="#1">tv cabinet 4 </a> </li>
+              <li> <a href="#1">tv cabinet 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">open shelves<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">open shelves 1 </a> </li>
+              <li> <a href="#1">open shelves 2 </a> </li>
+              <li> <a href="#1">open shelves 3 </a> </li>
+              <li> <a href="#1">open shelves 4 </a> </li>
+              <li> <a href="#1">open shelves 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">shoe rack<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">shoe rack 1 </a> </li>
+              <li> <a href="#1">shoe rack 2 </a> </li>
+              <li> <a href="#1">shoe rack 3 </a> </li>
+              <li> <a href="#1">shoe rack 4 </a> </li>
+              <li> <a href="#1">shoe rack 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">lobby<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">lobby 1 </a> </li>
+              <li> <a href="#1">lobby 2 </a> </li>
+              <li> <a href="#1">lobby 3 </a> </li>
+              <li> <a href="#1">lobby 4 </a> </li>
+              <li> <a href="#1">lobby 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">divan<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">divan 1 </a> </li>
+              <li> <a href="#1">divan 2 </a> </li>
+              <li> <a href="#1">divan 3 </a> </li>
+              <li> <a href="#1">divan 4 </a> </li>
+              <li> <a href="#1">divan 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">chair<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">chair 1 </a> </li>
+              <li> <a href="#1">chair 2 </a> </li>
+              <li> <a href="#1">chair 3 </a> </li>
+              <li> <a href="#1">chair 4 </a> </li>
+              <li> <a href="#1">chair 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Cradle<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Cradle 1 </a> </li>
+              <li> <a href="#1">Cradle 2 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">stand<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">stand 1 </a> </li>
+              <li> <a href="#1">stand 2 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">File Rack<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">File Rack 1 </a> </li>
+              <li> <a href="#1">File Rack 2 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>bedroom<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">bed<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">bed 1</a> </li>
+              <li> <a href="#1">bed 2</a> </li>
+              <li> <a href="#1">bed 3</a> </li>
+              <li> <a href="#1">bed 4</a> </li>
+              <li> <a href="#1">bed 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">Wardrobe<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Wardrobe 1 </a> </li>
+              <li> <a href="#1">Wardrobe 2 </a> </li>
+              <li> <a href="#1">Wardrobe 3 </a> </li>
+              <li> <a href="#1">Wardrobe 4 </a> </li>
+              <li> <a href="#1">Wardrobe 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Chest Of Drawers<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Chest Of Drawers 1 </a> </li>
+              <li> <a href="#1">Chest Of Drawers 2 </a> </li>
+              <li> <a href="#1">Chest Of Drawers 3 </a> </li>
+              <li> <a href="#1">Chest Of Drawers 4 </a> </li>
+              <li> <a href="#1">Chest Of Drawers 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Dressing Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Dressing Table 1 </a> </li>
+              <li> <a href="#1">Dressing Table 2 </a> </li>
+              <li> <a href="#1">Dressing Table 3 </a> </li>
+              <li> <a href="#1">Dressing Table 4 </a> </li>
+              <li> <a href="#1">Dressing Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Bed-side Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Bed-side Table 1 </a> </li>
+              <li> <a href="#1">Bed-side Table 2 </a> </li>
+              <li> <a href="#1">Bed-side Table 3 </a> </li>
+              <li> <a href="#1">Bed-side Table 4 </a> </li>
+              <li> <a href="#1">Bed-side Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Mattress<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Mattress 1 </a> </li>
+              <li> <a href="#1">Mattress 2 </a> </li>
+              <li> <a href="#1">Mattress 3 </a> </li>
+              <li> <a href="#1">Mattress 4 </a> </li>
+              <li> <a href="#1">Mattress 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Reading Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Reading Table 1 </a> </li>
+              <li> <a href="#1">Reading Table 2 </a> </li>
+              <li> <a href="#1">Reading Table 3 </a> </li>
+              <li> <a href="#1">Reading Table 4 </a> </li>
+              <li> <a href="#1">Reading Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Almirah<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Almirah 1 </a> </li>
+              <li> <a href="#1">Almirah 2 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>Dining<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">Dining<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Dining 1</a> </li>
+              <li> <a href="#1">Dining 2</a> </li>
+              <li> <a href="#1">Dining 3</a> </li>
+              <li> <a href="#1">Dining 4</a> </li>
+              <li> <a href="#1">Dining 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">Chair<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Chair 1 </a> </li>
+              <li> <a href="#1">Chair 2 </a> </li>
+              <li> <a href="#1">Chair 3 </a> </li>
+              <li> <a href="#1">Chair 4 </a> </li>
+              <li> <a href="#1">Chair 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Cafeteria<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Cafeteria 1 </a> </li>
+              <li> <a href="#1">Cafeteria 2 </a> </li>
+              <li> <a href="#1">Cafeteria 3 </a> </li>
+              <li> <a href="#1">Cafeteria 4 </a> </li>
+              <li> <a href="#1">Cafeteria 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Dinner Wagon<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Dinner Wagon 1 </a> </li>
+              <li> <a href="#1">Dinner Wagon 2 </a> </li>
+              <li> <a href="#1">Dinner Wagon 3 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Tea Trolley<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Tea Trolley 1 </a> </li>
+              <li> <a href="#1">Tea Trolley 2 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Showcase<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Showcase 1 </a> </li>
+              <li> <a href="#1">Showcase 2 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Mini Cabinet<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Mini Cabinet 1 </a> </li>
+              <li> <a href="#1">Mini Cabinet 2 </a> </li>
+              <li> <a href="#1">Mini Cabinet 3 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>office<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">Sofa<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Sofa 1</a> </li>
+              <li> <a href="#1">Sofa 2</a> </li>
+              <li> <a href="#1">Sofa 3</a> </li>
+              <li> <a href="#1">Sofa 4</a> </li>
+              <li> <a href="#1">Sofa 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">Side Rack<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Side Rack 1 </a> </li>
+              <li> <a href="#1">Side Rack 2 </a> </li>
+              <li> <a href="#1">Side Rack 3 </a> </li>
+              <li> <a href="#1">Side Rack 4 </a> </li>
+              <li> <a href="#1">Side Rack 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Swivel Chair<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Swivel Chair 1 </a> </li>
+              <li> <a href="#1">Swivel Chair 2 </a> </li>
+              <li> <a href="#1">Swivel Chair 3 </a> </li>
+              <li> <a href="#1">Swivel Chair 4 </a> </li>
+              <li> <a href="#1">Swivel Chair 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Executive Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Executive Table 1 </a> </li>
+              <li> <a href="#1">Executive Table 2 </a> </li>
+              <li> <a href="#1">Executive Table 3 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Office Almirah<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Office Almirah 1 </a> </li>
+              <li> <a href="#1">Office Almirah 2 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Computer Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Computer Table 1 </a> </li>
+              <li> <a href="#1">Computer Table 2 </a> </li>
+              <li> <a href="#1">Computer Table 3 </a> </li>
+              <li> <a href="#1">Computer Table 4 </a> </li>
+              <li> <a href="#1">Computer Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Director Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Director Table 1 </a> </li>
+              <li> <a href="#1">Director Table 2 </a> </li>
+              <li> <a href="#1">Director Table 3 </a> </li>
+              <li> <a href="#1">Director Table 4 </a> </li>
+              <li> <a href="#1">Director Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Conference Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Conference Table 1 </a> </li>
+              <li> <a href="#1">Conference Table 2 </a> </li>
+              <li> <a href="#1">Conference Table 3 </a> </li>
+              <li> <a href="#1">Conference Table 4 </a> </li>
+              <li> <a href="#1">Conference Table 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">Fixed Chair<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Fixed Chair 1 </a> </li>
+              <li> <a href="#1">Fixed Chair 2 </a> </li>
+              <li> <a href="#1">Fixed Chair 3 </a> </li>
+              <li> <a href="#1">Fixed Chair 4 </a> </li>
+              <li> <a href="#1">Fixed Chair 5 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span> Institutional<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+          <li class="has-child">
+            <a href="#">all Institutional </a>
+            <a href="#">Hotel &amp; Restaurant</a>
+            <a href="#">Hospital</a>
+            <a href="#">Academic</a>
+            <a href="#">Auditori</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>showpiece<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">showpiece 1</a> </li>
+              <li> <a href="#1">showpiece 2</a> </li>
+              <li> <a href="#1">showpiece 3</a> </li>
+              <li> <a href="#1">showpiece 4</a> </li>
+              <li> <a href="#1">showpiece 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">showpiece 1 </a> </li>
+              <li> <a href="#1">showpiece 2 </a> </li>
+              <li> <a href="#1">showpiece 3 </a> </li>
+              <li> <a href="#1">showpiece 4 </a> </li>
+              <li> <a href="#1">showpiece 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">showpiece 1 </a> </li>
+              <li> <a href="#1">showpiece 2 </a> </li>
+              <li> <a href="#1">showpiece 3 </a> </li>
+              <li> <a href="#1">showpiece 4 </a> </li>
+              <li> <a href="#1">showpiece 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">showpiece 1 </a> </li>
+              <li> <a href="#1">showpiece 2 </a> </li>
+              <li> <a href="#1">showpiece 3 </a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">showpiece 1 </a> </li>
+              <li> <a href="#1">showpiece 2 </a> </li>
+              <li> <a href="#1">showpiece 3 </a> </li>
+              <li> <a href="#1">showpiece 4 </a> </li>
+              <li> <a href="#1">showpiece 5 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>home appliance<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">home appliance 1</a> </li>
+              <li> <a href="#1">home appliance 2</a> </li>
+              <li> <a href="#1">home appliance 3</a> </li>
+              <li> <a href="#1">home appliance 4</a> </li>
+              <li> <a href="#1">home appliance 5</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">home appliance 1 </a> </li>
+              <li> <a href="#1">home appliance 2 </a> </li>
+              <li> <a href="#1">home appliance 3 </a> </li>
+              <li> <a href="#1">home appliance 4 </a> </li>
+              <li> <a href="#1">home appliance 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">home appliance 1 </a> </li>
+              <li> <a href="#1">home appliance 2 </a> </li>
+              <li> <a href="#1">home appliance 3 </a> </li>
+              <li> <a href="#1">home appliance 4 </a> </li>
+              <li> <a href="#1">home appliance 5 </a> </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">home appliance 1 </a> </li>
+              <li> <a href="#1">home appliance 2 </a> </li>
+              <li> <a href="#1">home appliance 3 </a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">title<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">home appliance 1 </a> </li>
+              <li> <a href="#1">home appliance 2 </a> </li>
+              <li> <a href="#1">home appliance 3 </a> </li>
+              <li> <a href="#1">home appliance 4 </a> </li>
+              <li> <a href="#1">home appliance 5 </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-child">
+        <span class="its-parent">
+          <span class="icon"></span>Kid’s<i class="fas fa-angle-down"></i></span>
+        <ul class="its-children">
+
+          <li class="has-child">
+            <span class="its-parent">Bed<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Kids’ Bunk Bed</a> </li>
+            </ul>
+          </li>
+
+          <li class="has-child">
+            <span class="its-parent">Study Table<i class="fas fa-angle-down"></i></span>
+            <ul class="its-children">
+              <li> <a href="#1">Kids’ Study Table </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!--End hs Mega Menu-->
+
   <main>
     <section id="wishlist">
-      <div class="container">
-
+      <div class="container my-3">
         <!-- Bradcum Here -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb my-3">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
@@ -341,9 +1185,13 @@
   </footer>
 
   <!-- Bootstrap Js Link -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- HS Menu -->
+  <script src="../js/jquery.hsmenu.min.js"></script>
   <!-- Custom Js Link -->
   <script src="../js/custome.js"></script>
 </body>

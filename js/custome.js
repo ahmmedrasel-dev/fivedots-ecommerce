@@ -1,3 +1,28 @@
+
+const dropdown = (id) => {
+  const dropdownElement = document.getElementById(id);
+  console.log(dropdownElement)
+  if (dropdownElement.style.display == 'block') {
+    dropdownElement.style.display = 'none'
+  } else {
+    dropdownElement.style.display = 'block'
+  }
+}
+
+const handleBrand = () => {
+  dropdown('filter-brand');
+}
+
+const handleColor = () => {
+  dropdown('filter-color');
+}
+
+
+const handlePrice = () => {
+  dropdown('filter-by-price');
+}
+
+
 // Jquary Code Here
 $(function () {
   /*==========NICE SELECT============*/
@@ -5,24 +30,8 @@ $(function () {
 })
 
 
-const dropdown = (id) => {
-  const dropdowElement = document.getElementById(id);
-  if (dropdowElement.style.display === 'block') {
-    dropdowElement.style.display = 'none'
-  } else {
-    dropdowElement.style.display = 'block'
-  }
-}
+$(document).ready(function () {
 
-const handdleBrand = () => {
-  dropdown('filter-brand');
-}
+  $(".hs-menubar").hsMenu();
 
-const handdleColor = () => {
-  dropdown('filter-color');
-}
-
-
-const handdlePrice = () => {
-  dropdown('filter-by-price');
-}
+}); 
