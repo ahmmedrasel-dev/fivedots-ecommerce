@@ -34,4 +34,9 @@ $(document).ready(function () {
 
   $(".hs-menubar").hsMenu();
 
-}); 
+});
+
+new WOW().init();
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)

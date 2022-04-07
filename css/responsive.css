@@ -44,23 +44,48 @@
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
-  .nav-right {
-    margin-right: 15px;
+  #showcase {
+    margin-top: 60px;
   }
 
+  .carousel-item {
+    height: 350px;
+  }
+
+  .nav-right {
+    margin-right: 30px;
+  }
+
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .nav-right li {
+    margin-left: 5px;
+  }
   .menu {
     padding: 0;
     display: none;
-  }
-
-  .navbar-brand {
-    margin-left: 50px;
   }
 
   .hs-menubar.sticky {
     top: 15px;
     left: 15px;
     z-index: 999;
+  }
+
+  .carousel-caption {
+    top: 70px !important;
+  }
+  
+  .carousel-text p {
+    margin-bottom: 10px;
+  }
+  
+  .carousel-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
   }
 
   .w-product-title,
@@ -139,11 +164,57 @@
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
+
   .menu {
     padding: 0;
     display: none;
-  } 
+  }
 
+  .navbar-brand {
+    margin-left: 50px;
+  }
+
+  .nav-right {
+    margin-right: 30px;
+  }
+
+  .container {
+    max-width: auto;
+  }
+
+  #showcase {
+    margin-top: 60px;
+  }
+
+  .carousel-item {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    top: 30px !important;
+  }
+
+  .carousel-text p {
+    margin-bottom: 10px;
+  }
+  
+  .carousel-text h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .fivedots-btn {
+    padding: 4px 20px;
+  }
+
+  .icon::after {
+    display: none;
+  }
+  
+  .fa-angle-down:before {
+    display: none;
+  }
+  
   .hs-menubar.sticky {
     display: block;
     position: fixed;
@@ -226,13 +297,47 @@
 
 @media (max-width: 575.98px) {
 	.fivedots-btn {
-		padding: 5px 30px;
-		font-size: 16px;
+		padding: 5px 8px;
+		font-size: 14px;
 	}
 
-  .navbar-brand {
-    order: 0;
+  .nav-right {
+    margin-right: 30px;
   }
+
+  .nav-right li {
+    margin-right: 2px;
+  }
+
+  .carousel-text p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .carousel-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  #showcase {
+    margin-top: 60px;
+  }
+
+  .carousel-caption {
+    top: 10px !important;
+  }
+  .carousel-item {
+    height: 200px;
+  }
+
+  #category-shop {
+    margin-top: 80px;
+  }
+
+.navbar-brand {
+  margin-left: 50px;
+}
 
   .search-box-desk {
     order: 1;

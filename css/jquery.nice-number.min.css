@@ -1,0 +1,5 @@
+.nice-number{display:inline-flex;justify-content:stretch;float: left;}.nice-number input{vertical-align:middle;-moz-appearance:textfield;box-sizing:content-box;margin:0;text-align:center;	padding: 5px 15px;border: none;border-top: 1px solid #9e9e9e;border-bottom: 1px solid #9e9e9e;}
+.nice-number input {-moz-appearance: textfield;box-sizing: content-box;margin: 0;text-align: center;
+padding: 3px 15px;}
+button {padding: 0px 9px;outline: none;background: #dddddd38;font-size: 16px;color: #9e9e9e;
+border: 1px solid #9e9e9e;}

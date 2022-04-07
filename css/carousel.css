@@ -1,0 +1,176 @@
+
+/*========================
+ CAROUSELE SLIDER START
+========================*/
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-img-1{
+    background: url('../images/banner-1.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.carousel-img-2{
+    background: url('../images/banner-2.png');
+     background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.carousel-img-3{
+    background: url('../images/banner-3.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+.clinet-img {
+    border-radius: 50%;
+    width: 100px;
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+
+.carousel-text {
+    margin-bottom: 132px;
+}
+
+.carousel-caption {
+  text-align: left !important;
+}
+
+.carousel-text p {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.carousel-text h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  margin: 5px;
+}
+
+/*========================
+   CAROUSELE SLIDER END
+========================*/
+
+
+
+
+
+
+/*========================
+   CLIENTS SLIDER START
+========================*/
+#clients {
+	padding-top: 90px;
+}
+
+
+.clients_heading h4 {
+	text-transform: capitalize;
+	text-align: center;
+	margin-bottom: 28px;
+	margin-top: -7px;
+	font-size: 35px;
+}
+
+#clients .carousel-item{
+    height: 350px;
+}
+
+#clients .carousel-text {
+	margin: 0;
+	text-align: left;
+	padding: 0px 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #0000008f;
+}
+
+#clients .carousel-text img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid #ddd;
+	margin-top: 5px;
+	margin-bottom: -8px;
+}
+
+/*
+#clients .carousel-text p i{
+    color: #ED1B35;
+}
+*/
+
+#clients .carousel-text p {
+	margin-top: 15px;
+	color: #fff;
+}
+
+#clients .carousel-text h6 {
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #ED1B35;
+}
+
+.carousel_comm_img {
+	background: linear-gradient(#00000080, #00000080), linear-gradient(#00000080, #00000080), url(../images/clients_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*========================
+   CLIENTS SLIDER END
+========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
