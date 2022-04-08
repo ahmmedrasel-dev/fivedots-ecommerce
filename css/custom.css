@@ -521,6 +521,47 @@ nav .main_menu li a.active_menu {
 	margin-top: 20px;
 }
 
+
+.left-arrow {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  z-index: 999;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  z-index: 999;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.slide-nav {
+  margin-top: 40px;
+}
+
+.slide-item img {
+  width: 100%;
+}
+
 .price {
 	font-size: 40px;
 	font-weight: 500;
@@ -599,11 +640,21 @@ nav .main_menu li a.active_menu {
 	background-color: #f64d52;
 }
 
+.nice-number {
+  margin-top: 1px;
+}
+
+.nice-number button {
+  padding: 0px 14px;
+  outline: none;
+  background: #222222;
+  font-size: 16px;
+  color: #fff;
+}
+
 .qty-input {
-	width: 120px;
-	background-color: #fff;
 	border: 2px solid rgba(34, 34, 34, 0.15);
-	height: 60px;
+	height: 48px;
 	border-radius: 0;
 }
 
@@ -677,7 +728,7 @@ nav .main_menu li a.active_menu {
 .installment-pament {
 	width: 420px;
 	padding: 15px 10px;
-	margin-top: 62px;
+	margin-top: 15px;
 }
 
 .installment-pament p {

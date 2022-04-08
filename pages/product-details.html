@@ -14,9 +14,12 @@
   <!-- Jquary Css Link -->
   <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
 
+  <!-- Nice Number Style -->
+  <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
   <!-- hs Menu CSS-->
   <link rel="stylesheet" href="../css/hs-menu.min.css" />
 
+  <link rel="stylesheet" href="../css/slick.css">
   <!-- Custom Css Link -->
   <link rel="stylesheet" href="../css/custom.css">
   <!-- Responsive Css Link -->
@@ -29,22 +32,21 @@
     <!-- Navbar Top Start Here -->
     <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
-        <form action="" class="search-box-desk d-flex align-items-center border-bottom py-1 order-sm-1 order-1">
+        <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1 order-lg-0">
           <div class="search-icon">
             <img class="img-fluid" src="../images/search-normal.png" alt="search-icon">
           </div>
           <input class="search border-0 p-2 ms-1" type="search" id="" placeholder="Search items...">
         </form>
         <!-- Company Logo -->
-        <a class="navbar-brand order-0 order-sm-0" href="../index.html"><span class="fs-2">5dots</span></a>
+        <a class="navbar-brand order-0 order-sm-0 order-lg-1" href="../index.html"><span class="fs-2">5dots</span></a>
         <!-- User Action -->
-        <ul class="d-flex align-items-center nav-right order-3 order-sm-3">
-          <li class="ps-2"><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
+        <ul class="d-flex align-items-center nav-right order-3 order-sm-3 order-lg-2">
+          <li><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="../pages/wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
+          <li><a href="wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="../pages/cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a>
-          </li>
+          <li><a href="cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
         </ul>
       </div>
     </div>
@@ -52,16 +54,12 @@
     <!-- Navbar Start Here -->
     <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="menu_fix"><i class="fas fa-bars"></i></span>
-        </button>
+
         <div class="collapse navbar-collapse mobile-menu" id="navbarNavDropdown">
           <ul class="main_menu navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html" class="home">Home </a>
+            <li class="nav-item"><a href="../index.html" class="home">Home </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="product.html">new arrival</a></li>
-            <li class="static nav-item"><a class="nav-link " href="#">Clothes <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Clothes <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -155,7 +153,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Beauty <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Beauty <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -229,7 +227,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Perfumes <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Perfumes <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-4">
@@ -292,7 +290,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Accesories <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Accesories <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -363,7 +361,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Electronics <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Electronics <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -422,6 +420,7 @@
     </nav>
   </header>
 
+  <!-- Mobile Menu -->
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
   <nav class="hs-navigation">
     <ul class="nav-links">
@@ -954,16 +953,52 @@
         <div class="row">
           <!-- Feature Image Section -->
           <div class="col-md-6">
-            <img class="img-fluid" src="../images/feature-img.jpeg" alt="Feature Images">
+            <div class="product-image">
 
-            <ul class="multi-img d-flex align-items-center justify-content-between mt-5">
-              <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
-              <li><a href="#"><img class="img-fluid" src="../images/product-thumbnail-1.jpeg" alt=""></a></li>
-              <li><a href="#"><img class="img-fluid" src="../images/product-thumbnail-1.jpeg" alt=""></a></li>
-              <li><a href="#"><img class="img-fluid" src="../images/product-thumbnail-1.jpeg" alt=""></a></li>
-              <li><a href="#"><img class="img-fluid" src="../images/product-thumbnail-1.jpeg" alt=""></a></li>
-              <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
-            </ul>
+              <div class="slider">
+                <div class="slide-item">
+                  <img id="img_01" class="img-fluid" src="../images/feature-img.jpeg" alt="Feature Images">
+                </div>
+
+                <div class="slide-nav-item">
+
+                  <img id="img_02" class="img-fluid" src="../images/accesories-1.png" alt="Feature Images">
+                </div>
+                <div class="slide-nav-item">
+
+                  <img id="img_03" class="img-fluid" src="../images/accesories-2.png" alt="Feature Images">
+                </div>
+                <div class="slide-nav-item">
+
+                  <img id="img_04" class="img-fluid" src="../images/accesories-3.png" alt="Feature Images">
+                </div>
+                <div class="slide-nav-item">
+
+                  <img id="img_05" class="img-fluid" src="../images/accesories-4.png" alt="Feature Images">
+                </div>
+              </div>
+
+              <div class="slide-nav">
+                <div class="slide-nav-item">
+                  <img class="w-75" src="../images/feature-img.jpeg" alt="">
+                </div>
+                <div class="slide-nav-item">
+                  <img class="w-75" src="../images/accesories-1.png" alt="">
+                </div>
+                <div class="slide-nav-item">
+                  <img class="w-75" src="../images/accesories-2.png" alt="">
+                </div>
+                <div class="slide-nav-item">
+                  <img class="w-75" src="../images/accesories-3.png" alt="">
+                </div>
+                <div class="slide-nav-item">
+                  <img class="w-75" src="../images/accesories-4.png" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
           <div class="col-md-6">
@@ -993,11 +1028,9 @@
               </ul>
             </div>
 
-            <div class="d-flex mt-5">
-              <div class="position-relative">
-                <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
-                <span class="increase"><i class="fas fa-caret-up"></i></span>
-                <span class="decrease"><i class="fas fa-caret-down"></i></span>
+            <div class="product-qty mt-5">
+              <div class="nice-number">
+                <input class="qty-input" type="number" value="1" min="0">
               </div>
               <a href="#" class="cart-btn">add to cart</a>
               <a href="#" class="add-wishlist"><img src="../images/heart.png" alt="user-profile"></a>
@@ -1023,58 +1056,63 @@
       </div>
     </section>
 
-    <section class="container" id="product-description">
-      <div class="row">
-        <div class="col-12 product-descriptio-title">
-          <ul class="nav mb-3 justify-content-center description-head" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Product Description</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Additional Information</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque cupiditate veritatis quisquam. Ut eaque
-              autem asperiores consequuntur hic, repellat unde. Adipisci alias numquam labore eius porro facere
-              necessitatibus cum, accusamus, qui quia ut provident. Quam error aperiam, eveniet iusto voluptas est quasi
-              molestiae tempore autem consequuntur adipisci deserunt delectus. Accusantium, ea at expedita delectus nisi
-              fuga maiores doloremque praesentium earum libero in repellendus quidem officiis, ducimus suscipit eligendi
-              quia. Similique tempore incidunt et. Quas aliquam sequi dolorum dolor consequuntur natus deleniti, nisi
-              nam illo excepturi corporis ducimus, quidem inventore, nostrum soluta quaerat quis perspiciatis voluptatum
-              suscipit voluptas beatae qui dicta.<br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi voluptatem quod ipsum sed nisi error dolor nobis eligendi commodi quis unde doloribus ea optio
-              consectetur blanditiis non iure quam, corporis veniam harum ex eaque neque, mollitia quas. Rem recusandae,
-              iure culpa eos harum voluptate at, labore tempore commodi neque consequuntur nobis sit non. Inventore
-              praesentium deleniti nam neque corrupti harum, perspiciatis laudantium minus vitae quia laboriosam
-              molestiae est odit beatae at optio id esse fugiat ipsam. Perferendis porro tempora illum perspiciatis
-              dolores autem. Placeat, ullam est quaerat dolores impedit voluptatibus sit rerum aliquam temporibus
-              incidunt, autem vero, obcaecati quae distinctio?</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <table class="table table-bordered">
-                <tr>
-                  <td>Product Name</td>
-                  <td>Mobile Phone</td>
-                </tr>
-
-                <tr>
-                  <td>Product Name</td>
-                  <td>Product detailse</td>
-                </tr>
-
-                <tr>
-                  <td>Product Name</td>
-                  <td>Product detailse</td>
-                </tr>
-              </table>
+    <section id="product-description">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 product-descriptio-title">
+            <ul class="nav mb-3 justify-content-center description-head" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Product Description</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Additional
+                  Information</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque cupiditate veritatis quisquam. Ut eaque
+                autem asperiores consequuntur hic, repellat unde. Adipisci alias numquam labore eius porro facere
+                necessitatibus cum, accusamus, qui quia ut provident. Quam error aperiam, eveniet iusto voluptas est
+                quasi
+                molestiae tempore autem consequuntur adipisci deserunt delectus. Accusantium, ea at expedita delectus
+                nisi
+                fuga maiores doloremque praesentium earum libero in repellendus quidem officiis, ducimus suscipit
+                eligendi
+                quia. Similique tempore incidunt et. Quas aliquam sequi dolorum dolor consequuntur natus deleniti, nisi
+                nam illo excepturi corporis ducimus, quidem inventore, nostrum soluta quaerat quis perspiciatis
+                voluptatum
+                suscipit voluptas beatae qui dicta.<br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi voluptatem quod ipsum sed nisi error dolor nobis eligendi commodi quis unde doloribus ea optio
+                consectetur blanditiis non iure quam, corporis veniam harum ex eaque neque, mollitia quas. Rem
+                recusandae,
+                iure culpa eos harum voluptate at, labore tempore commodi neque consequuntur nobis sit non. Inventore
+                praesentium deleniti nam neque corrupti harum, perspiciatis laudantium minus vitae quia laboriosam
+                molestiae est odit beatae at optio id esse fugiat ipsam. Perferendis porro tempora illum perspiciatis
+                dolores autem. Placeat, ullam est quaerat dolores impedit voluptatibus sit rerum aliquam temporibus
+                incidunt, autem vero, obcaecati quae distinctio?</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <table class="table table-bordered">
+                  <tr>
+                    <td>Product Name</td>
+                    <td>Mobile Phone</td>
+                  </tr>
+                  <tr>
+                    <td>Product Name</td>
+                    <td>Product detailse</td>
+                  </tr>
+                  <tr>
+                    <td>Product Name</td>
+                    <td>Product detailse</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- Product BY Category one -->
@@ -1232,8 +1270,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- Elevate Zoom -->
+  <script src="../js/jquery.elevateZoom-3.0.8.min.js"></script>
+
   <!-- HS Menu -->
   <script src="../js/jquery.hsmenu.min.js"></script>
+  <!-- Nice Number -->
+  <script src="../js/jquery.nice-number.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="../js/slick.min.js"></script>
   <!-- Custom Js Link -->
   <script src="../js/custome.js"></script>
 </body>
