@@ -19,6 +19,9 @@
   <!-- hs Menu CSS-->
   <link rel="stylesheet" href="../css/hs-menu.min.css" />
 
+  <!--Material Design Iconic Font-->
+  <link rel="stylesheet" href="../material-design/css/material-design-iconic-font.css" />
+
   <link rel="stylesheet" href="../css/slick.css">
   <!-- Custom Css Link -->
   <link rel="stylesheet" href="../css/custom.css">
@@ -29,7 +32,9 @@
 <body>
 
   <header>
-    <!-- Navbar Top Start Here -->
+    <!---------------------------
+        Navbar Top Start 
+    ---------------------------->
     <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
         <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1 order-lg-0">
@@ -51,7 +56,10 @@
       </div>
     </div>
 
-    <!-- Navbar Start Here -->
+    <!--------------------------
+        Navbar Mega  Menu
+    ---------------------------->
+
     <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
 
@@ -420,7 +428,9 @@
     </nav>
   </header>
 
-  <!-- Mobile Menu -->
+  <!----------------------
+        Mobile Menu 
+  ----------------------->
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
   <nav class="hs-navigation">
     <ul class="nav-links">
@@ -945,16 +955,13 @@
       </li>
     </ul>
   </nav>
-  <!--End hs Mega Menu-->
 
   <main>
     <section id="product-detials">
       <div class="container">
         <div class="row">
-          <!-- Feature Image Section -->
           <div class="col-md-6">
             <div class="product-image">
-
               <div class="slider">
                 <div class="slide-item">
                   <img id="img_01" class="img-fluid" src="../images/feature-img.jpeg" alt="Feature Images">
@@ -977,7 +984,6 @@
                   <img id="img_05" class="img-fluid" src="../images/accesories-4.png" alt="Feature Images">
                 </div>
               </div>
-
               <div class="slide-nav">
                 <div class="slide-nav-item">
                   <img class="w-75" src="../images/feature-img.jpeg" alt="">
@@ -996,66 +1002,72 @@
                 </div>
 
               </div>
-
             </div>
-
           </div>
 
+          <!--------------------------
+              Product Content Details
+          ---------------------------->
           <div class="col-md-6">
-            <h3 class="title">Etiam rhoncus. Maecenas tempus, tellus eget condimentum</h3>
-            <p class="summary">Loremipsum: Adolorsit amet</p>
-            <h3 class="price">SAR 77.50</h3>
-            <p class="previous-price">SAR <span class="old-price">100.00</span> <span class="discount">OFF 35%</span>
-            </p>
-            <div class="product-color">
-              <p>Color: </p>
-              <ul class="d-flex">
-                <li><a href="#" class="color-1"></a></li>
-                <li><a href="#" class="color-2"></a></li>
-                <li><a href="#" class="color-3"></a></li>
-                <li><a href="#" class="color-4"></a></li>
-              </ul>
-            </div>
-
-            <div class="product-size">
-              <p>Size: </p>
-              <ul class="d-flex">
-                <li><a href="#">S</a></li>
-                <li><a href="#">M</a></li>
-                <li><a href="#">L</a></li>
-                <li><a href="#">XL</a></li>
-                <li><a href="#">2XL</a></li>
-              </ul>
-            </div>
-
-            <div class="product-qty mt-5">
-              <div class="nice-number">
-                <input class="qty-input" type="number" value="1" min="0">
+            <div class="product-content">
+              <h3 class="title">Etiam rhoncus. Maecenas tempus, tellus eget condimentum</h3>
+              <p class="summary">Loremipsum: Adolorsit amet</p>
+              <h3 class="price">SAR 77.50</h3>
+              <p class="previous-price">SAR <span class="old-price">100.00</span> <span class="discount">OFF 35%</span>
+              </p>
+              <div class="product-color">
+                <p>Color: </p>
+                <ul class="d-flex">
+                  <li><a href="#" class="color-1"></a></li>
+                  <li><a href="#" class="color-2"></a></li>
+                  <li><a href="#" class="color-3"></a></li>
+                  <li><a href="#" class="color-4"></a></li>
+                </ul>
               </div>
-              <a href="#" class="cart-btn">add to cart</a>
-              <a href="#" class="add-wishlist"><img src="../images/heart.png" alt="user-profile"></a>
-            </div>
 
-            <p class="category">Category: Beauty</p>
-            <div class="d-flex share-product">
-              <p>Share This Item:</p>
-              <ul class="d-flex">
-                <li class="me-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="me-3"><a href="#"><i class="fab fa-instagram"></i></li>
-                <li class="me-3"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
+              <div class="product-size">
+                <p>Size: </p>
+                <ul class="d-flex">
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">XL</a></li>
+                  <li><a href="#">2XL</a></li>
+                </ul>
+              </div>
 
-            <div class="installment-pament d-flex border justify-content-between align-items-center">
-              <p>or 4 interest-free payment of <br> 300 AED. <a href="#">Learn More</a></p>
+              <div class="product-qty mt-5">
+                <div class="nice-number">
+                  <input class="qty-input" type="number" value="1" min="0">
+                </div>
+                <a href="#" class="cart-btn">add to cart</a>
+                <a href="#" class="add-wishlist"><img src="../images/heart.png" alt="user-profile"></a>
+              </div>
 
-              <a href="#"><img class="img-fluid" src="../images/fitbit-logo.png" alt=""></a>
+              <p class="category">Category: Beauty</p>
+              <div class="d-flex share-product">
+                <p>Share This Item:</p>
+                <ul class="d-flex">
+                  <li class="me-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="me-3"><a href="#"><i class="fab fa-instagram"></i></li>
+                  <li class="me-3"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+
+              <div class="installment-payment d-flex border justify-content-between align-items-center">
+                <p>or 4 interest-free payment of <br> 300 AED. <a href="#">Learn More</a></p>
+
+                <a href="#"><img class="img-fluid" src="../images/fitbit-logo.png" alt=""></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!--------------------------
+        Product Details
+    ---------------------------->
     <section id="product-description">
       <div class="container">
         <div class="row">
@@ -1115,7 +1127,9 @@
       </div>
     </section>
 
-    <!-- Product BY Category one -->
+    <!--------------------------
+        Related Product
+    --------------------------->
     <section id="related-category-product">
       <div class="container">
         <div class="row g-4">

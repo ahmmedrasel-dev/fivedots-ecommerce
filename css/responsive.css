@@ -251,12 +251,22 @@
     margin-bottom: 20px;
   }
 
+  #banner-two .banner-heading {
+    margin-top: 5px;
+  }
+
   .banner-content-tow .fivedots-btn {
     margin-bottom: 30px;
   }
   .section-title {
     font-size: 32px;
     line-height: 1.5;
+  }
+
+  .brand-item a {
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #424242;
   }
 
   .subscribe-content h2 {
@@ -303,13 +313,21 @@
 	}
 
   .nav-right {
-    margin-right: 10px;
+    margin-right: 25px;
   }
 
   .nav-right li {
     margin-right: 2px;
   }
 
+  .hs-menubar.sticky {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+  }
+  
   .carousel-text p {
     margin-bottom: 5px;
     font-size: 16px;
@@ -336,9 +354,9 @@
     margin-top: 80px;
   }
 
-.navbar-brand {
-  margin-left: 50px;
-}
+  .navbar-brand {
+    margin-left: 50px;
+  }
 
   .search-box-desk {
     order: 1;
@@ -403,11 +421,9 @@
     border-bottom: 1px solid #b5b5b5;
     padding-left: 20px;
   }
-	.parent-cat-item {
-		margin-bottom: 30px;
-	}
 
-	.child-cat-item {
+	.parent-cat-item,
+  .child-cat-item {
 		margin-bottom: 30px;
 	}
 
@@ -423,14 +439,16 @@
 		font-size: 22px;
 	}
 
-	.banner-content-tow .banner-heading {
+	#banner-two .banner-heading {
 		font-size: 28px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
-	.banner-content-tow {
-		padding: 40px 0 50px 0;
-	}
+  #banner-three .fivedots-btn {
+    padding: 5px 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 
   /* homepage Css  */
 

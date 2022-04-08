@@ -1,14 +1,4 @@
 
-const dropdown = (id) => {
-  const dropdownElement = document.getElementById(id);
-  console.log(dropdownElement)
-  if (dropdownElement.style.display == 'block') {
-    dropdownElement.style.display = 'none'
-  } else {
-    dropdownElement.style.display = 'block'
-  }
-}
-
 const handleBrand = () => {
   dropdown('filter-brand');
 }
@@ -23,26 +13,17 @@ const handlePrice = () => {
 }
 
 
-// Jquary Code Here
-
-$(function () {
-
-  /*==========NICE SELECT============*/
-
-  $('#nice-select').niceSelect();
-
-
-})
-
-
+// Mobile Menu
 $(document).ready(function () {
-
   $(".hs-menubar").hsMenu();
 
+  // Nice Selected
+  $('#select_js').niceSelect();
 });
 
 
 $(function () {
+
   // Product Gallery Image Slider
 
   $('.slider').slick({
@@ -68,6 +49,15 @@ $(function () {
   });
 
 
+  $('.brand-container').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<i class="fas fa-angle-left left-arrow"></i>',
+    nextArrow: '<i class="fas fa-angle-right right-arrow"></i>'
+  });
+
   // Product Image Zoom.
   // $("#img_01").elevateZoom();
   // $("#img_02").elevateZoom();
@@ -81,7 +71,7 @@ $(function () {
 
 })
 
-new WOW().init();
+// new WOW().init();
 
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)

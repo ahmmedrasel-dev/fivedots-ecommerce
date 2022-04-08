@@ -13,6 +13,8 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Jquary Css Link -->
   <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+  <!-- Slick Slider Css Link -->
+  <link rel="stylesheet" href="css/slick.css">
 
   <!-- hs Menu CSS-->
   <link rel="stylesheet" href="css/hs-menu.min.css" />
@@ -32,7 +34,9 @@
 
 <body>
   <header>
-    <!-- Navbar Top Start Here -->
+    <!---------------------------
+          Navbar Top Start 
+  ---------------------------->
     <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
         <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1 order-lg-0">
@@ -54,7 +58,9 @@
       </div>
     </div>
 
-    <!-- Navbar Start Here -->
+    <!--------------------------
+          Navbar Mega  Menu
+    ---------------------------->
     <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
 
@@ -422,9 +428,12 @@
         </div>
       </div>
     </nav>
+
   </header>
 
-  <!-- Mobile Menu -->
+  <!----------------------
+          Mobile Menu 
+  ----------------------->
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
   <nav class="hs-navigation">
     <ul class="nav-links">
@@ -949,11 +958,12 @@
       </li>
     </ul>
   </nav>
-  <!--End hs Mega Menu-->
+
 
   <main>
-    <!-- Slider Start Here -->
-
+    <!---------------------------
+          Slider Start Here 
+    ----------------------------->
     <section id="showcase" class="bg-dark">
       <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -1013,29 +1023,33 @@
       </div>
     </section>
 
-
-    <!-- Womans Category Start -->
+    <!---------------------------
+          Womans Category Start 
+    ----------------------------->
     <section id="womens-category">
       <div class="container">
         <div class="row">
           <div class="col-md-3 child-category">
-            <div class="child-cat-item text-center">
-              <img class="w-100 rounded" src="images/womens-1.png" alt="womens-1">
+            <div class="child-cat-item ">
+              <img class="w-100" src="images/womens-1.png" alt="womens-1">
               <h3>Women's Clothes</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
-            <div class="child-cat-item text-center">
-              <img class="w-100 rounded" src="images/womens-2.png" alt="womens-1">
+            <div class="child-cat-item">
+              <img class="w-100" src="images/womens-2.png" alt="womens-1">
               <h3>Women's Watches</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 category-main">
             <div class="parent-cat-item">
-              <img class="img-fluid parent-cat-banner" src="images/womens-main-1.jpeg" alt="women's Main">
+              <div class="overflow"></div>
+              <img class="img-fluid" src="images/womens-main-1.jpeg" alt="women's Main">
               <div class="parent-cat-content">
                 <h4>Weekend Sale</h4>
                 <h2>New Fashion Collection</h2>
@@ -1047,16 +1061,18 @@
           </div>
 
           <div class="col-md-3 child-category">
-            <div class="child-cat-item text-center">
-              <img class="w-100 rounded" src="images/womens-3.png" alt="womens-1">
+            <div class="child-cat-item">
+              <img class="w-100" src="images/womens-3.png" alt="womens-1">
               <h3>Footwear</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
-            <div class="child-cat-item text-center mt-2">
-              <img class="w-100 rounded" src="images/womens-4.png" alt="womens-1">
+            <div class="child-cat-item mt-2">
+              <img class="w-100" src="images/womens-4.png" alt="womens-1">
               <h3>Sportswear</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
           </div>
 
@@ -1064,58 +1080,65 @@
       </div>
     </section>
 
-    <!-- Banner Section One -->
+    <!---------------------------
+        Banner Section One 
+    ----------------------------->
     <section id="banner-one">
       <div class="conteiner">
         <div class="row">
-          <div class="col-12">
-            <div class="banner-content text-center py-5">
-              <h3 class="banner-heading">Lorem Ipsume</h3>
-              <h5 class="banner-sub-heading">Beauty</h5>
-              <p class="banner-text text-white">Lorem ipsum dolor, sit amet <br> consectetur adipisicing <br>elit.
-                Pariatur,
-                commodi!</p>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="banner-content">
+              <h5 class="banner-sub-heading">20% off in all Products</h5>
+              <h3 class="banner-heading">Mens Special</h3>
+              <a class="fivedots-btn" href="">Shop Now</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Mens Category Start -->
+    <!---------------------------
+        Mens Category Start 
+    ----------------------------->
     <section id="mens-category" class="container">
       <div class="row">
         <div class="col-md-3 child-category">
-          <div class="child-cat-item text-center">
-            <img class="img-fluid rounded" src="images/mens-1.png" alt="womens-1">
+          <div class="child-cat-item">
+            <img class="img-fluid" src="images/mens-1.png" alt="women's-1">
             <h3>Mens Clothes</h3>
-            <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
+                alt=""></a>
           </div>
 
           <div class="child-cat-item text-center mt-2">
-            <img class="img-fluid rounded" src="images/mens-2.png" alt="womens-1">
+            <img class="img-fluid" src="images/mens-2.png" alt="women's-1">
             <h3>Mens Footwear</h3>
-            <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
+                alt=""></a>
           </div>
 
         </div>
 
         <div class="col-md-3 child-category">
-          <div class="child-cat-item text-center">
-            <img class="img-fluid rounded" src="images/mens-3.png" alt="womens-1">
+          <div class="child-cat-item">
+            <img class="img-fluid" src="images/mens-3.png" alt="women's-1">
             <h3>Mens Watches</h3>
-            <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
+                alt=""></a>
           </div>
 
-          <div class="child-cat-item text-center mt-2">
-            <img class="img-fluid rounded" src="images/mens-4.png" alt="womens-1">
+          <div class="child-cat-item mt-2">
+            <img class="img-fluid" src="images/mens-4.png" alt="women's-1">
             <h3>Mens Sportswear</h3>
-            <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
+                alt=""></a>
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 category-main">
           <div class="parent-cat-item">
-            <img class="img-fluid parent-cat-banner" src="images/mens-main-1.png" alt="Womens Main">
+            <div class="overflow"></div>
+            <img class="img-fluid parent-cat-banner" src="images/mens-main-1.png" alt="women's Main">
             <div class="parent-cat-content">
               <h4>Weekend Sale</h4>
               <h2>New Fashion Collection</h2>
@@ -1129,29 +1152,33 @@
       </div>
     </section>
 
-    <!-- Banner Section Two -->
+    <!---------------------------
+              Banner Two 
+    ---------------------------->
     <section id="banner-two">
       <div class="conteiner">
         <div class="row">
+          <div class="col-6"></div>
           <div class="col-6">
-          </div>
-          <div class="col-6">
-            <div class="banner-content-tow text-center">
-              <h3 class="banner-heading">Ready For the<br> summer</h3>
-              <a class="fivedots-btn mt-md-4" href="#">Shop Now</a>
+            <div class="banner-content">
+              <h3 class="banner-heading">Ready For the<br> Summer</h3>
+              <a class="fivedots-btn" href="#">Shop Now</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Accesories Category Start -->
-    <section id="accesories-category">
+    <!--------------------------------
+          Accessories Category Start 
+    --------------------------------->
+    <section id="accessories-category">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 category-main">
             <div class="parent-cat-item">
-              <img class="img-fluid parent-cat-banner" src="images/Accesories-main-1.png" alt="Womens Main">
+              <div class="overflow"></div>
+              <img class="img-fluid parent-cat-banner" src="images/Accesories-main-1.png" alt="women's Main">
               <div class="parent-cat-content">
                 <h4>Weekend Sale</h4>
                 <h2>New Fashion Collection</h2>
@@ -1163,48 +1190,54 @@
           </div>
 
           <div class="col-md-3 child-category">
-            <div class="child-cat-item text-center">
-              <img class="img-fluid rounded" src="images/accesories-1.png" alt="womens-1">
+            <div class="child-cat-item">
+              <img class="img-fluid" src="images/accesories-1.png" alt="womens-1">
               <h3>Begs</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
-            <div class="child-cat-item text-center mt-2">
-              <img class="img-fluid rounded" src="images/accesories-2.png" alt="womens-1">
+            <div class="child-cat-item mt-2">
+              <img class="img-fluid" src="images/accesories-2.png" alt="womens-1">
               <h3>Perfumes</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
           </div>
 
           <div class="col-md-3 child-category">
-            <div class="child-cat-item text-center">
-              <img class="img-fluid rounded" src="images/accesories-3.png" alt="womens-1">
+            <div class="child-cat-item">
+              <img class="img-fluid" src="images/accesories-3.png" alt="womens-1">
               <h3>Makeups</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
 
-            <div class="child-cat-item text-center mt-2">
-              <img class="img-fluid rounded" src="images/accesories-4.png" alt="womens-1">
+            <div class="child-cat-item mt-2">
+              <img class="img-fluid" src="images/accesories-4.png" alt="womens-1">
               <h3>Jewellary</h3>
-              <a href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png" alt=""></a>
+              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
+                  src="images/btn-arrow.png" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product BY Category one -->
+    <!---------------------------------
+          Product BY Category one 
+    ---------------------------------->
     <section id="product-category-men">
       <div class="container">
         <div class="row g-4">
           <h2 class="section-title text-center text-white mb-md-4">styles based on your shopping habits</h2>
           <div class="col-md-3 col-12">
-            <div class="product-container">
+            <div class="product-item">
               <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-1.png"
                   alt="product-img-1"></a>
 
-              <div class="p-3">
+              <div class="product-content">
                 <a href="pages/product-details.html" class="product-title-home">Black Snikers shoes</a>
                 <h3 class="new-price my-3">SAR <span>230.00</span></h3>
                 <div class="d-flex justify-content-between">
@@ -1219,11 +1252,11 @@
           </div>
 
           <div class="col-md-3">
-            <div class="product-container">
+            <div class="product-item">
               <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-2.png"
                   alt="product-img-1"></a>
 
-              <div class="p-3">
+              <div class="product-content">
                 <a href="pages/product-details.html" class="product-title-home">Womens Fahsion Clothes</a>
                 <h3 class="new-price my-3">SAR <span>230.00</span></h3>
                 <div class="d-flex justify-content-between">
@@ -1238,11 +1271,11 @@
           </div>
 
           <div class="col-md-3">
-            <div class="product-container">
+            <div class="product-item">
               <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-3.png"
                   alt="product-img-1"></a>
 
-              <div class="p-3">
+              <div class="product-content">
                 <a href="pages/product-details.html" class="product-title-home">Black causal boat shoes</a>
                 <h3 class="new-price my-3">SAR <span>230.00</span></h3>
                 <div class="d-flex justify-content-between">
@@ -1257,11 +1290,11 @@
           </div>
 
           <div class="col-md-3">
-            <div class="product-container">
+            <div class="product-item">
               <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-4.png"
                   alt="product-img-1"></a>
 
-              <div class="p-3">
+              <div class="product-content">
                 <a href="pages/product-details.html" class="product-title-home">Color convers shoes</a>
                 <h3 class="new-price my-3">SAR <span>230.00</span></h3>
                 <div class="d-flex justify-content-between">
@@ -1282,14 +1315,16 @@
       </div>
     </section>
 
-    <!-- Banner Section Two -->
+    <!--------------------------------
+          Banner Section Three
+    --------------------------------->
     <section id="banner-three">
       <div class="conteiner">
         <div class="row">
           <div class="col-6">
-            <div class="banner-content-tow text-center">
+            <div class="banner-content">
               <h3 class="banner-heading">35% <span class="d-block">Discount On All Items</span></h3>
-              <a class="fivedots-btn mt-md-4" href="#">Shop Now</a>
+              <a class="fivedots-btn" href="#">Shop Now</a>
             </div>
           </div>
           <div class="col-6">
@@ -1298,91 +1333,24 @@
       </div>
     </section>
 
-    <!-- Product BY Category one -->
+    <!-------------------------------
+          Product BY Brand
+    -------------------------------->
     <section id="product-category-men">
       <div class="container">
-        <div class="row g-4">
-          <h2 class="section-title text-center text-white mb-4">styles based on your shopping habits</h2>
-          <div class="col-md-3">
-            <div class="product-container">
-              <div class="product-img">
-                <a class="w-100" href="pages/product-details.html"><img class="img-fluid"
-                    src="images/product-img-5.jpeg" alt="product-img-1"></a>
-              </div>
-              <div class="p-3">
-                <a href="pages/product-details.html" class="product-title-home">Womes wihtie watches</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
+        <div class="row">
+          <h2 class="section-title text-center text-white mb-3">Shop By Brand</h2>
+          <div class="col-md-12">
+            <div class="brand-container">
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/calvin-klein.jpeg" alt=""></a></div>
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/Adidas.jpeg" alt=""></a></div>
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/calvin-klein.jpeg" alt=""></a></div>
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/gues.jpeg" alt=""></a></div>
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/new-balance.jpeg" alt=""></a></div>
+              <div class="brand-item"><a href="#"><img src="images/brand-logo/skechers.jpeg" alt=""></a></div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="product-container">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-6.png"
-                  alt="product-img-1"></a>
-
-              <div class="p-3">
-                <a href="pages/product-details.html" class="product-title-home">Womens Red Clothes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-container">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-7.png"
-                  alt="product-img-1"></a>
-
-              <div class="p-3">
-                <a href="pages/product-details.html" class="product-title-home">Womens White Jeckets</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-container">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-9.png"
-                  alt="product-img-1"></a>
-
-              <div class="p-3">
-                <a href="pages/product-details.html" class="product-title-home">Womens sunglass</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-4">
-          <a class="fivedots-btn" href="#">View More</a>
         </div>
       </div>
     </section>
@@ -1487,6 +1455,8 @@
   <script src="js/jquery.hsmenu.min.js"></script>
 
   <script src="js/wow.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="js/slick.min.js"></script>
   <!-- Custom Js Link -->
   <script src="js/custome.js"></script>
 </body>
