@@ -172,7 +172,15 @@
   }
 
   .navbar-brand {
-    margin-left: 50px;
+    display: none;
+  }
+
+  .search-box-desk {
+    margin-left: 60px;
+  }
+
+  .search {
+    width: 145px;
   }
 
   .nav-right {
@@ -646,7 +654,17 @@
       width: 100%;
       overflow: hidden;
       display: flex;
-      margin-left: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .common-btn,
+    .checkout_text .common-btn {
+      padding: 10px 15px;
+    }
+
+    .cart-update .btn-light {
+      padding: 10px 15px;
     }
     
     .cart_pro_text {
@@ -676,6 +694,12 @@
       font-size: 12px;
       margin-left: 15px;
     }
+
+    .apply-coupon {
+      flex-direction: column;
+      align-items: start;
+      justify-content: stretch;
+    }
     
     .cart_list {
       margin-bottom: 15px;
@@ -688,15 +712,15 @@
     }
     
     .checkout_text .clients_name {
-      font-size: 12px;
+      font-size: 14px;
     }
     
     .checkout_text .address {
-      font-size: 12px;
+      font-size: 14px;
     }
     
     .checkout_text p {
-      font-size: 12px;
+      font-size: 14px;
     }
     
     .checkout_text .delivery {
@@ -705,17 +729,23 @@
     
     .checkout_text a {
       padding: 5px 10px;
-      font-size: 12px;
+      font-size: 14px;
     }
     
     .checkout_text input {
-      padding: 0px 10px;
+      padding: 10px 10px;
       font-size: 12px;
-      width: 60%;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .checkout-btn {
+      text-align: center;
+      margin-top: 20px;
     }
     
     .checkout_text button {
-      width: 30%;
+      width: 100%;
       font-size: 12px;
     }
     
