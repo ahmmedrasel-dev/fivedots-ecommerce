@@ -291,27 +291,12 @@
     padding-right: 25px;
   }
   /* wish-list style */
-  .witem-product-qty-inner {
-    position: relative;
-    left: 40%;
-  }
-  .cart-btn {
-    margin-right: 0;
-  }
-  .witem-addtocart {
-    text-align: right;
-  }
-
-  .wishlist-title-sm {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .w-product-addtocart,
-  .witem-addtocart {
-    width: 30%;
-    text-align: center;
-  }
+.wishlist-action {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* ----------------------
@@ -682,7 +667,8 @@
     }
     
     .cart_pro_text a i {
-      font-size: 12px;
+      font-size: 20px;
+      margin-top: 14px;
     }
     
     .cart_text_tk h6 {

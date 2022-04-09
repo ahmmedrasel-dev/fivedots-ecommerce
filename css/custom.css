@@ -1110,6 +1110,12 @@ nav .main_menu li a.active_menu {
      CART VIEW END
 ==========================*/
 
+.wishlist-action {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .cart_item_heading {
   background: #fff;
