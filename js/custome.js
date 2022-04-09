@@ -71,7 +71,7 @@ $(function () {
 
 })
 
-// new WOW().init();
+new WOW().init();
 
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)

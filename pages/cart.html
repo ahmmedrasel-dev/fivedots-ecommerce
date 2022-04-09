@@ -11,12 +11,17 @@
   <!-- Bootstrap Css link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Jquary Css Link -->
+
+  <!-- Nice Number Style -->
   <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
 
   <!-- hs Menu CSS-->
   <link rel="stylesheet" href="../css/hs-menu.min.css" />
 
+  <!--Material Design Iconic Font-->
+  <link rel="stylesheet" href="../material-design/css/material-design-iconic-font.css" />
+
+  <link rel="stylesheet" href="../css/slick.css">
   <!-- Custom Css Link -->
   <link rel="stylesheet" href="../css/custom.css">
   <!-- Responsive Css Link -->
@@ -26,42 +31,39 @@
 <body>
 
   <header>
-    <!-- Navbar Top Start Here -->
+    <!---------------------------
+            Navbar Top Start 
+    ---------------------------->
     <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
-        <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1">
+        <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1 order-lg-0">
           <div class="search-icon">
             <img class="img-fluid" src="../images/search-normal.png" alt="search-icon">
           </div>
-          <input class="search border-0 p-1 ms-1" type="search" id="" placeholder="Search items...">
+          <input class="search border-0 p-2 ms-1" type="search" id="" placeholder="Search items...">
         </form>
         <!-- Company Logo -->
-        <a class="navbar-brand order-0 order-sm-0" href="../index.html"><span class="fs-2">5dots</span></a>
+        <a class="navbar-brand order-0 order-sm-0 order-lg-1" href="../index.html"><span class="fs-2">5dots</span></a>
         <!-- User Action -->
-        <ul class="d-flex align-items-center nav-right order-3 order-sm-3">
-          <li class="ps-2"><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
+        <ul class="d-flex align-items-center nav-right order-3 order-sm-3 order-lg-2">
+          <li><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="../pages/wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
+          <li><a href="wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
 
-          <li class="ps-2"><a href="../pages/cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a>
-          </li>
+          <li><a href="cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
         </ul>
       </div>
     </div>
-
-    <!-- Navbar Start Here -->
+    <!--------------------------
+            Navbar Mega  Menu
+    ---------------------------->
     <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="menu_fix"><i class="fas fa-bars"></i></span>
-        </button>
         <div class="collapse navbar-collapse mobile-menu" id="navbarNavDropdown">
           <ul class="main_menu navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html" class="home">Home </a>
+            <li class="nav-item"><a href="../index.html" class="home">Home </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="product.html">new arrival</a></li>
-            <li class="static nav-item"><a class="nav-link " href="#">Clothes <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Clothes <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -155,7 +157,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Beauty <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Beauty <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -229,7 +231,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Perfumes <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Perfumes <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-4">
@@ -292,7 +294,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Accesories <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Accesories <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -363,7 +365,7 @@
                 </div>
               </div>
             </li>
-            <li class="static nav-item"><a class="nav-link " href="#">Electronics <i class="fas fa-angle-down"></i></a>
+            <li class="static"><a href="#">Electronics <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
                   <div class="col-lg-2">
@@ -422,6 +424,9 @@
     </nav>
   </header>
 
+  <!----------------------
+        Mobile Menu 
+   ----------------------->
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
   <nav class="hs-navigation">
     <ul class="nav-links">
@@ -946,74 +951,116 @@
       </li>
     </ul>
   </nav>
-  <!--End hs Mega Menu-->
+
 
 
   <main>
-    <section id="cart">
-      <div class="container my-3">
-        <!-- Bradcum Here -->
-        <nav aria-label="breadcrumb my-3">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Cart</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Cart-list</li>
-          </ol>
-        </nav>
+    <!-- Bradcum Here -->
+    <div class="container my-3">
+      <nav aria-label="breadcrumb my-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Add to Cart</li>
+        </ol>
+      </nav>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="cart-container d-none d-md-block">
-              <div class="cart-heading">
-                <p>Product Name</p>
-                <p class="text-center">Color</p>
-                <p class="text-center">Size</p>
-                <p class="text-center">Price</p>
-                <p class="text-center">Quantity</p>
-                <p class="text-center">Total Price</p>
-                <p class="text-center">Remove</p>
+      <section id="cart_view">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12 col-sm-12 col-md-12">
+              <div class="cart_item_heading">
+                <h5>My Cart (4 Items) </h5>
+                <h4>Total: ৳ 906 <span>You are saving total: ৳ 144 </span></h4>
               </div>
 
-              <div class="cart-item-container">
-                <div class="cart-item">
-                  <div class="cart-product-title p-3">
-                    <img src="../images/wishlit-img.jpeg" alt="">
-                    <p class="">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="cart-item-color">
-                    <p>Red, Blue</p>
-                  </div>
-                  <div class="cart-item-size">
-                    <p>SM, LG, XL</p>
-                  </div>
+              <div class="select_all">
+                <input type="checkbox">
+                <p>select all (5 items)</p>
+                <a href="#"><i class="far fa-trash-alt"></i>delete</a>
+              </div>
 
-                  <div class="cart-item-price">
-                    <p>SAR 100.00</p>
+              <div class="cart_list">
+                <div class="cart_item_details">
+                  <div class="check_box">
+                    <input type="checkbox">
                   </div>
-
-                  <div class="cart-item-qty text-center p-3">
-                    <div class="citem-product-qty-inner">
-                      <input class="form-control text-ceter qty-input " type="number" value="1" min="0">
-                      <span class="increase"><i class="fas fa-caret-up"></i></span>
-                      <span class="decrease"><i class="fas fa-caret-down"></i></span>
-                    </div>
+                  <div class="cart_pro_img">
+                    <img src="../images/product-img-2.png" alt="product">
                   </div>
-                  <div class="cart-item-tprice p3">
-                    <p>SAR 100.00</p>
+                  <div class="cart_pro_text">
+                    <p class="item_name">your product name here</p>
+                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                    <a href="#"><i class="fa fa-heart-o"></i></a>
                   </div>
-                  <div class="cart-item-remove p3">
-                    <button class="btn btn-danger">Delete</button>
+                  <div class="cart_text_tk">
+                    <input type="number" placeholder="1">
+                    <h6><del>৳ 1,000</del>৳ 906</h6>
                   </div>
-
+                  <div class="cart_text"></div>
+                </div>
+                <div class="cart_item_details">
+                  <div class="check_box">
+                    <input type="checkbox">
+                  </div>
+                  <div class="cart_pro_img">
+                    <img src="../images/product-img-2.png" alt="product">
+                  </div>
+                  <div class="cart_pro_text">
+                    <p class="item_name">your product name here</p>
+                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                  </div>
+                  <div class="cart_text_tk">
+                    <input type="number" placeholder="1">
+                    <h6><del>৳ 1,000</del>৳ 906</h6>
+                  </div>
+                  <div class="cart_text"></div>
+                </div>
+                <div class="cart_item_details">
+                  <div class="check_box">
+                    <input type="checkbox">
+                  </div>
+                  <div class="cart_pro_img">
+                    <img src="../images/product-img-3.png" alt="product">
+                  </div>
+                  <div class="cart_pro_text">
+                    <p class="item_name">your product name here</p>
+                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                  </div>
+                  <div class="cart_text_tk">
+                    <input type="number" placeholder="1">
+                    <h6><del>৳ 1,000</del>৳ 906</h6>
+                  </div>
+                  <div class="cart_text"></div>
                 </div>
               </div>
+            </div>
 
+            <div class="col-lg-12 col-12 col-sm-12 col-md-12">
+              <div class="checkout_text">
+                <h6>shipping &amp; billing</h6>
+                <p class="clients_name"><i class="fa fa-map-marker"></i> jahid hossain <span class="edit">edit</span>
+                </p>
+                <p class="address">haji dilmohammad aveneu, dhakauddan, mohammadpur, dhaka-1216.</p>
+                <p class="phone"><i class="fas fa-phone-alt"></i> 12345467 <span class="edit">edit</span></p>
+
+                <p class="order">order summary</p>
+                <p>subtotal (5 items) <span>৳ 500</span></p>
+                <p>discount <span>- ৳ 150</span></p>
+                <form>
+                  <input type="text" placeholder="Enter Voucer Code">
+                  <button type="submit">apply</button>
+                </form>
+                <h6 class="total">Payable amount <span> ৳ 350</span></h6>
+                <p class="vat">delivery charge applicable</p>
+                <a href="check_out.html" class="btn common-btn">proceed to pay</a>
+              </div>
             </div>
           </div>
         </div>
-
-      </div>
-    </section>
+      </section>
   </main>
 
   <footer class="footer-section">
@@ -1084,10 +1131,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- Elevate Zoom -->
+  <script src="../js/jquery.elevateZoom-3.0.8.min.js"></script>
+
   <!-- HS Menu -->
   <script src="../js/jquery.hsmenu.min.js"></script>
+  <!-- Nice Number -->
+  <script src="../js/jquery.nice-number.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="../js/slick.min.js"></script>
   <!-- Custom Js Link -->
   <script src="../js/custome.js"></script>
 </body>
+
+</html>
 
 </html>

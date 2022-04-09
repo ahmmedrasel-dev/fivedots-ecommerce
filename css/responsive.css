@@ -306,6 +306,10 @@
   }
 }
 
+/* ----------------------
+        Small Device
+-------------------------*/
+
 @media (max-width: 575.98px) {
 	.fivedots-btn {
 		padding: 5px 8px;
@@ -339,7 +343,7 @@
     color: #fff;
   }
 
-  #showcase {
+  #showcase, #cart {
     margin-top: 60px;
   }
 
@@ -594,4 +598,139 @@
   .contact-info ul li a {
     font-size: 16px;
   }
+
+
+    /*----cart view start----*/
+    
+    #cart_view {
+      padding-top: 30px;
+    }
+    
+    .cart_item_heading {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .cart_item_heading h5 {
+      font-size: 14px;
+    }
+    
+    .cart_item_heading h4 {
+      font-size: 12px;
+    }
+    
+    .cart_item_heading h4 span {
+      font-size: 12px;
+    }
+    
+    .select_all p {
+      font-size: 12px;
+    }
+    
+    .select_all input {
+      margin-top: 3px;
+    }
+    
+    .select_all a {
+      font-size: 12px;
+    }
+    
+    .cart_pro_img {
+      width: 30%;
+      margin-right: 10px;
+      float: left;
+      margin-bottom: 10px;
+    }
+    
+    .cart_text_tk {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      margin-left: 20px;
+    }
+    
+    .cart_pro_text {
+      width: 55%;
+      float: right;
+    }
+    
+    .cart_pro_text p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    
+    .check_box {
+      line-height: 55px;
+    }
+    
+    .cart_pro_text a i {
+      font-size: 12px;
+    }
+    
+    .cart_text_tk h6 {
+      padding-top: 6px;
+      font-size: 12px;
+    }
+    
+    .cart_text_tk h6 del {
+      font-size: 12px;
+      margin-left: 15px;
+    }
+    
+    .cart_list {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    
+    .checkout_text h6 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .checkout_text .clients_name {
+      font-size: 12px;
+    }
+    
+    .checkout_text .address {
+      font-size: 12px;
+    }
+    
+    .checkout_text p {
+      font-size: 12px;
+    }
+    
+    .checkout_text .delivery {
+      font-size: 12px;
+    }
+    
+    .checkout_text a {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    
+    .checkout_text input {
+      padding: 0px 10px;
+      font-size: 12px;
+      width: 60%;
+    }
+    
+    .checkout_text button {
+      width: 30%;
+      font-size: 12px;
+    }
+    
+    .checkout_text .vat {
+      margin: 0;
+    }
+    
+    .select_all {
+      padding: 10px;
+    }
+    
+    .checkout_text {
+      padding: 10px;
+    }
+    
+    /*----cart view end----*/
+    
 }
