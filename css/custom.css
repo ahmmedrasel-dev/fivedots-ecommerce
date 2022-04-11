@@ -1,4 +1,10 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&family=Montserrat:wght@700&display=swap");
+
+@font-face {
+  font-family: "five-dots-bold";
+  src: url(../font/ArbFONTS-Luxury-1.0.otf);
+}
 
 :root {
 	--text-color: #787474;
@@ -37,7 +43,7 @@ a {
 }
 
 a:hover {
-	text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -76,6 +82,20 @@ img {
 	width: 100%;
 }
 
+
+.navbar-brand {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.logo {
+  font-family: 'five-dots-bold';
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 .fivedots-btn {
 	padding: 10px 40px;
 	border: 2px solid var(--fivedotsbtn-bcolor);
@@ -89,7 +109,7 @@ img {
 }
 
 .fivedots-filter-btn {
-	padding: 10px 40px;
+	padding: 5px 40px;
 	border: 2px solid var(--fivedotsbtn-bcolor);
 	color: var(--fivedotsbtn-color);
 	font-size: 16px;
@@ -565,27 +585,16 @@ nav .main_menu li a.active_menu {
 }
 
 
-.brand-item a {
-  width: 200px;
+#brand .items {
   border: 7px solid #424242;
   margin: 10px;
   border-radius: 5px;
 }
 
-.brand-item a img {
-  width: 100%;
-  border-radius: 5px;
+#brand .items a {
+  display: block;
 }
 
-.brand-container .left-arrow {
-  left: -40px;
-  background-color: #7b7b7b;
-}
-
-.brand-container .right-arrow {
-  right: -40px;
-  background-color: #7b7b7b;
-}
 
 
 
@@ -817,6 +826,12 @@ nav .main_menu li a.active_menu {
 	border: 1px solid #222;
 }
 
+/* Wishilist Css */
+
+#wishlist {
+  margin-bottom: 50px;
+}
+
 .add-wishlist {
 	padding: 15px;
 	border: 2px solid rgba(34, 34, 34, 0.15);
@@ -898,6 +913,13 @@ nav .main_menu li a.active_menu {
   width: 100%;
   padding: 15px;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-select:checked {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
 }
 
 /* Discount Label */
@@ -973,41 +995,22 @@ nav .main_menu li a.active_menu {
 	margin-right: 20px;
 }
 
-.filter-by-price {
-	margin-top: 20px;
-}
-
-.filter-price li {
-	padding-bottom: 10px;
-}
-
-.filter-price span span {
-	margin-left: 10px;
-}
-
-.filter-by-color,
-.filter-by-brand {
-	background-color: #f6f6f6;
-	padding: 10px 0px;
-	border-radius: 10px;
-}
 
 .filter-color,
-.filter-brand {
+.filter-brand,
+.filter-size {
 	height: 200px;
 	margin-top: 20px;
+  margin-bottom: 20px;
 	overflow-x: scroll;
 }
 
 .filter-color li,
-.filter-brand li {
+.filter-brand li,
+.filter-size li {
 	padding-bottom: 10px;
 }
 
-.filter-color span span,
-.filter-brand span span {
-	margin-left: 10px;
-}
 
 /* Wislist Item Css */
 
@@ -1141,6 +1144,11 @@ nav .main_menu li a.active_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+#cart_view {
+  margin-bottom: 50px;
 }
 
 .cart_item_heading {
