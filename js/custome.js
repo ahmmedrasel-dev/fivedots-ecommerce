@@ -58,6 +58,15 @@ $(function () {
     nextArrow: '<i class="fas fa-angle-right right-arrow"></i>'
   });
 
+  $('.product-container').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false
+  });
+
   // Product Image Zoom.
   // $("#img_01").elevateZoom();
   // $("#img_02").elevateZoom();
@@ -70,6 +79,14 @@ $(function () {
   $('input[type="number"]').niceNumber();
 
 })
+
+$(document).ready(function () {
+  $('.state').select2();
+});
+
+$(document).ready(function () {
+  $('.city').select2();
+});
 
 new WOW().init();
 

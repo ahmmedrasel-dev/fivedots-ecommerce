@@ -5,70 +5,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5dots Multi-vendor E-commerces</title>
+  <title>Checkout</title>
   <!-- Font Awesome Icon -->
   <script src="https://kit.fontawesome.com/b868f71921.js" crossorigin="anonymous"></script>
   <!-- Bootstrap Css link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Jquary Css Link -->
-  <link rel="stylesheet" href="css/jquery.nice-number.min.css">
-  <!-- Slick Slider Css Link -->
-  <link rel="stylesheet" href="css/slick.css">
+
+  <!-- Select 2 -->
+  <link rel="stylesheet" href="../css/select2.css">
+
+  <!-- Nice Number Style -->
+  <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
 
   <!-- hs Menu CSS-->
-  <link rel="stylesheet" href="css/hs-menu.min.css" />
-
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/hs-menu.min.css" />
 
   <!--Material Design Iconic Font-->
-  <link rel="stylesheet" href="material-design/css/material-design-iconic-font.css" />
+  <link rel="stylesheet" href="../material-design/css/material-design-iconic-font.css" />
 
-  <link rel="stylesheet" href="css/carousel.css">
-
+  <link rel="stylesheet" href="../css/slick.css">
   <!-- Custom Css Link -->
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="../css/custom.css">
   <!-- Responsive Css Link -->
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
 </head>
 
 <body>
+
   <header>
     <!---------------------------
-          Navbar Top Start 
-  ---------------------------->
+              Navbar Top Start 
+      ---------------------------->
     <div class="nav-top">
       <div class="container d-flex justify-content-between align-items-center py-2">
         <form action="" class="search-box-desk d-flex align-items-center py-1 order-sm-1 order-1 order-lg-0">
           <div class="search-icon">
-            <img class="img-fluid" src="images/search-normal.png" alt="search-icon">
+            <img class="img-fluid" src="../images/search-normal.png" alt="search-icon">
           </div>
           <input class="search border-0 p-2 ms-1" type="search" id="" placeholder="Search items...">
         </form>
         <!-- Company Logo -->
-        <a class="navbar-brand order-0 order-sm-0 order-lg-1" href="index.html"><span class="fs-2">5dots</span></a>
+        <a class="navbar-brand order-0 order-sm-0 order-lg-1" href="../index.html"><span class="fs-2">5dots</span></a>
         <!-- User Action -->
         <ul class="d-flex align-items-center nav-right order-3 order-sm-3 order-lg-2">
-          <li><a href="#"><img src="images/profile.png" alt="user-profile"></a></li>
+          <li><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
 
-          <li><a href="pages/wishlist.html"><img src="images/heart.png" alt="user-profile"></a></li>
+          <li><a href="wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
 
-          <li><a href="pages/cart.html"><img src="images/shopping-cart.png" alt="user-profile"></a></li>
+          <li><a href="cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
         </ul>
       </div>
     </div>
-
     <!--------------------------
-          Navbar Mega  Menu
-    ---------------------------->
+              Navbar Mega  Menu
+      ---------------------------->
     <nav class="navbar navbar-expand-lg bg-light menu">
       <div class="container">
-
         <div class="collapse navbar-collapse mobile-menu" id="navbarNavDropdown">
           <ul class="main_menu navbar-nav">
-            <li class="nav-item"><a href="index.html" class="home">Home </a>
+            <li class="nav-item"><a href="../index.html" class="home">Home </a>
             </li>
-            <li class="nav-item"><a href="product.html">new arrival</a></li>
             <li class="static"><a href="#">Clothes <i class="fas fa-angle-down"></i></a>
               <div class="mega_full">
                 <div class="row">
@@ -428,12 +426,11 @@
         </div>
       </div>
     </nav>
-
   </header>
 
   <!----------------------
           Mobile Menu 
-  ----------------------->
+     ----------------------->
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>
   <nav class="hs-navigation">
     <ul class="nav-links">
@@ -959,461 +956,227 @@
     </ul>
   </nav>
 
-
   <main>
-    <!---------------------------
-          Slider Start Here 
-    ----------------------------->
-    <section id="showcase" class="bg-dark">
-      <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-slide-to="0" data-bs-target="#myCarousel" class="active"></li>
-          <li data-bs-slide-to="1" data-bs-target="#myCarousel"></li>
-          <li data-bs-slide-to="2" data-bs-target="#myCarousel"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item carousel-img-1 active" data-bs-interval="3000">
-            <div class="container">
-              <div class="carousel-caption text-dark text-left">
-                <div class="carousel-text">
-                  <p class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">50% off in all products</p>
-                  <h1 class=" wow bounceInDown" data-wow-duration="1.2s" data-wow-delay=".2s">office furnicture</h1>
-                  <a href="#" class="btn fivedots-btn wow bounceInDown" data-wow-duration="1.5s"
-                    data-wow-delay=".5s">shop
-                    now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-img-2" data-bs-interval="3000">
-            <div class="container">
-              <div class="container">
-                <div class="carousel-caption text-dark text-left">
-                  <div class="carousel-text">
-                    <p class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">50% off in all products</p>
-                    <h1 class=" wow bounceInDown" data-wow-duration="1.2s" data-wow-delay=".2s">office furnicture</h1>
-                    <a href="#" class="btn fivedots-btn wow bounceInDown" data-wow-duration="1.5s"
-                      data-wow-delay=".5s">shop
-                      now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-img-3" data-bs-interval="3000">
-            <div class="container">
-              <div class="carousel-caption text-dark text-left">
-                <div class="carousel-text">
-                  <p class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">50% off in all products</p>
-                  <h1 class=" wow bounceInDown" data-wow-duration="1.2s" data-wow-delay=".2s">office furnicture</h1>
-                  <a href="#" class="btn fivedots-btn wow bounceInDown" data-wow-duration="1.5s"
-                    data-wow-delay=".5s">shop
-                    now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-    </section>
-
-    <!---------------------------
-          Womans Category Start 
-    ----------------------------->
-    <section id="womens-category">
+    <section class="checkout-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 child-category">
-            <div class="child-cat-item ">
-              <a href="pages/categorie-shop.html"><img class="w-100" src="images/womens-1.png" alt="womens-1"></a>
-              <h3>Women's Clothes</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-            <div class="child-cat-item">
-              <a href="pages/categorie-shop.html"><img class="w-100" src="images/womens-2.png" alt="womens-1"></a>
-              <h3>Women's Watches</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 category-main">
-            <div class="parent-cat-item">
-              <div class="overflow"></div>
-              <img class="img-fluid" src="images/womens-main-1.jpeg" alt="women's Main">
-              <div class="parent-cat-content">
-                <h4>Weekend Sale</h4>
-                <h2>New Fashion Collection</h2>
-                <p>From only $180.00</p>
-                <a class="fivedots-btn mt-4" href="#">Shop Now <img class="icon" src="images/btn-arrow-light.png"
-                    alt=""></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 child-category">
-            <div class="child-cat-item">
-              <a href="pages/categorie-shop.html"><img class="w-100" src="images/womens-3.png" alt="womens-1"></a>
-              <h3>Footwear</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-            <div class="child-cat-item mt-2">
-              <img class="w-100" src="images/womens-4.png" alt="womens-1">
-              <h3>Sportswear</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!---------------------------
-        Banner Section One 
-    ----------------------------->
-    <section id="banner-one">
-      <div class="conteiner">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="banner-content">
-              <h5 class="banner-sub-heading">20% off in all Products</h5>
-              <h3 class="banner-heading">Mens Special</h3>
-              <a class="fivedots-btn" href="">Shop Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------------------------
-        Mens Category Start 
-    ----------------------------->
-    <section id="mens-category" class="container">
-      <div class="row">
-        <div class="col-md-3 child-category">
-          <div class="child-cat-item">
-            <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/mens-1.png" alt="women's-1"></a>
-            <h3>Mens Clothes</h3>
-            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
-                alt=""></a>
-          </div>
-
-          <div class="child-cat-item text-center mt-2">
-            <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/mens-2.png" alt="women's-1"></a>
-            <h3>Mens Footwear</h3>
-            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
-                alt=""></a>
-          </div>
-
-        </div>
-
-        <div class="col-md-3 child-category">
-          <div class="child-cat-item">
-            <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/mens-3.png" alt="women's-1"></a>
-            <h3>Mens Watches</h3>
-            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
-                alt=""></a>
-          </div>
-
-          <div class="child-cat-item mt-2">
-            <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/mens-4.png" alt="women's-1"></a>
-            <h3>Mens Sportswear</h3>
-            <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon" src="images/btn-arrow.png"
-                alt=""></a>
-          </div>
-        </div>
-
-        <div class="col-md-6 category-main">
-          <div class="parent-cat-item">
-            <div class="overflow"></div>
-            <img class="img-fluid parent-cat-banner" src="images/mens-main-1.png" alt="women's Main">
-            <div class="parent-cat-content">
-              <h4>Weekend Sale</h4>
-              <h2>New Fashion Collection</h2>
-              <p>From only $180.00</p>
-              <a class="fivedots-btn mt-4" href="#">Shop Now <img class="icon" src="images/btn-arrow-light.png"
-                  alt=""></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!---------------------------
-              Banner Two 
-    ---------------------------->
-    <section id="banner-two">
-      <div class="conteiner">
-        <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6">
-            <div class="banner-content">
-              <h3 class="banner-heading">Ready For the<br> Summer</h3>
-              <a class="fivedots-btn" href="#">Shop Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------
-          Accessories Category Start 
-    --------------------------------->
-    <section id="accessories-category">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 category-main">
-            <div class="parent-cat-item">
-              <div class="overflow"></div>
-              <img class="img-fluid parent-cat-banner" src="images/Accesories-main-1.png" alt="women's Main">
-              <div class="parent-cat-content">
-                <h4>Weekend Sale</h4>
-                <h2>New Fashion Collection</h2>
-                <p>From only $180.00</p>
-                <a class="fivedots-btn mt-4" href="#">Shop Now <img class="icon" src="images/btn-arrow-light.png"
-                    alt=""></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 child-category">
-            <div class="child-cat-item">
-              <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/accesories-1.png"
-                  alt="womens-1"></a>
-              <h3>Begs</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-            <div class="child-cat-item mt-2">
-              <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/accesories-2.png"
-                  alt="womens-1"></a>
-              <h3>Perfumes</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-          </div>
-
-          <div class="col-md-3 child-category">
-            <div class="child-cat-item">
-              <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/accesories-3.png"
-                  alt="womens-1"></a>
-              <h3>Makeups</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-
-            <div class="child-cat-item mt-2">
-              <a href="pages/categorie-shop.html"><img class="img-fluid" src="images/accesories-4.png"
-                  alt="womens-1"></a>
-              <h3>Jewellary</h3>
-              <a class="explore-btn" href="pages/categorie-shop.html">Explore <img class="icon"
-                  src="images/btn-arrow.png" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---------------------------------
-          Product BY Category one 
-    ---------------------------------->
-    <section id="product-category-men">
-      <div class="container">
-        <h2 class="section-title text-center text-white mb-md-4">styles based on your shopping habits</h2>
-        <div class="row product-container g-4">
-          <div class="col-md-3 col-12">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-1.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Black Snikers shoes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-2.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Womens Fahsion Clothes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-3.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Black causal boat shoes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-4.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Color convers shoes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-4.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Color convers shoes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="product-item">
-              <a class="w-100" href="pages/product-details.html"><img class="img-fluid" src="images/product-img-4.png"
-                  alt="product-img-1"></a>
-
-              <div class="product-content">
-                <a href="pages/product-details.html" class="product-title-home">Color convers shoes</a>
-                <h3 class="new-price my-3">SAR <span>230.00</span></h3>
-                <div class="d-flex justify-content-between">
-                  <div class="off">
-                    <span class="old-price">SAR 340</span>
-                    <span class="discount">30% OFF</span>
-                  </div>
-                  <span class="wishlist"><i class="far fa-heart"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="text-center mt-4">
-          <a class="fivedots-btn" href="#">View More</a>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------
-          Banner Section Three
-    --------------------------------->
-    <section id="banner-three">
-      <div class="conteiner">
-        <div class="row">
-          <div class="col-6">
-            <div class="banner-content">
-              <h3 class="banner-heading">35% <span class="d-block">Discount On All Items</span></h3>
-              <a class="fivedots-btn" href="#">Shop Now</a>
-            </div>
-          </div>
-          <div class="col-6">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-------------------------------
-          Product BY Brand
-    -------------------------------->
-    <section id="product-category-men">
-      <div class="container">
-        <div class="row">
-          <h2 class="section-title text-center text-white mb-3">Shop By Brand</h2>
+        <div class="row breadcrumb-main">
           <div class="col-md-12">
-            <div class="brand-container">
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/calvin-klein.jpeg" alt=""></a></div>
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/Adidas.jpeg" alt=""></a></div>
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/calvin-klein.jpeg" alt=""></a></div>
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/gues.jpeg" alt=""></a></div>
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/new-balance.jpeg" alt=""></a></div>
-              <div class="brand-item"><a href="#"><img src="images/brand-logo/skechers.jpeg" alt=""></a></div>
-            </div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+              </ol>
+            </nav>
           </div>
 
         </div>
+        <div class="row">
+          <!-- Shipping Address -->
+          <div class="col-lg-7 p-0 left">
+            <div class="shipping-form">
+              <div class="heading-checkout">
+                <h4>Billing Details</h4>
+              </div>
+              <div class="row mt-3 g-3">
+                <div class="col-lg-12">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
+                </div>
+                <div class="col-lg-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                </div>
+                <div class="col-5 col-md-6 col-lg-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Your Phone Number">
+                </div>
+
+                <div class="col-lg-5 col-md-6">
+                  <label for="state" class="form-label">State</label>
+                  <select id="state" class="form-select state">
+                    <option selected>Choose State</option>
+                    <option>Eastern Provence</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <select id="city" class="form-select city">
+                    <option selected>Choose City</option>
+                    <option>Dammam</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <label for="inputZip" class="form-label">Postal Code</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="Apartment, studio, or floor">
+                </div>
+
+                <div class="col-12">
+                  <label for="orderNotes" class="form-label">Order Notes</label>
+                  <textarea class="form-control" id="orderNotes" placeholder="Note About Your Order..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment-method">
+              <div class="heading-checkout">
+                <h4>Select Payment Method</h4>
+              </div>
+              <ul class="payment-method-list">
+                <li>
+                  <input id="bank" type="checkbox">
+                  <label for="bank">Direct Bank Transfer</label>
+                </li>
+                <li>
+                  <input id="paypal" type="checkbox">
+                  <label for="paypal">Paypal</label>
+                </li>
+                <li>
+                  <input id="card" type="checkbox">
+                  <label for="card">Credit Card</label>
+                </li>
+                <li>
+                  <input id="delivery" type="checkbox">
+                  <label for="delivery">Cash on Delivery</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Order Item % Calculation -->
+          <div class="col-lg-5 p-0 right">
+            <div class="order-summary">
+              <div class="heading-checkout">
+                <h4>Your Order Items</h4>
+              </div>
+              <div class="row order-item">
+                <div class="col-3 text-start0">
+                  <img class="rounded w-75" src="../images/product-img-2.png" alt="product">
+                </div>
+                <div class="col-6">
+                  <p>Your Product Name Here</p>
+                  <p>
+                    <small>
+                      (Color: red, Size: SM)
+                    </small>
+                  </p>
+                </div>
+                <div class="col-3 text-end">
+                  <p>SAR 120</p>
+                </div>
+              </div>
+
+              <div class="row order-item">
+                <div class="col-3">
+                  <img class="rounded w-75" src="../images/product-img-2.png" alt="product">
+                </div>
+                <div class="col-6">
+                  <p>Your Product Name Here</p>
+                  <p>
+                    <small>
+                      (Color: red, Size: SM)
+                    </small>
+                  </p>
+                </div>
+                <div class="col-3 text-end">
+                  <p>SAR 120</p>
+                </div>
+              </div>
+
+              <div class="row order-item">
+                <div class="col-3">
+                  <img class="rounded w-75" src="../images/product-img-2.png" alt="product">
+                </div>
+                <div class="col-6">
+                  <p>Your Product Name Here</p>
+                  <p>
+                    <small>
+                      (Color: red, Size: SM)
+                    </small>
+                  </p>
+                </div>
+                <div class="col-3 text-end">
+                  <p>SAR 120</p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="order-calculation">
+              <div class="heading-checkout">
+                <h4>Payment Calculation</h4>
+              </div>
+              <div class="row mt-3 g-3">
+                <div class="col-6">
+                  <h6>Subtotal:</h6>
+                </div>
+                <div class="col-6">
+                  <h6 class="price-text sub-total-text text-end"> SAR 41.40 </h6>
+                </div>
+
+                <div class="col-6">
+                  <h6>Shipping Cost:</h6>
+                </div>
+                <div class="col-6">
+                  <h6 class="price-text sub-total-text text-end"> SAR 41.40 </h6>
+                </div>
+
+                <div class="col-6">
+                  <h6>Tax:</h6>
+                </div>
+                <div class="col-6">
+                  <h6 class="price-text sub-total-text text-end"> SAR 41.40 </h6>
+                </div>
+
+                <div class="col-6">
+                  <h6>Discount Amount:(If applicable)</h6>
+                </div>
+                <div class="col-6">
+                  <h6 class="price-text sub-total-text text-end"> SAR 41.40 </h6>
+                </div>
+                <hr>
+                <div class="col-6">
+                  <h5>Total Amount</h5>
+                </div>
+                <div class="col-6">
+                  <h5 class="price-text sub-total-text text-end"> SAR 441.40 </h5>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="place-order">
+              <button class="place-order-button">Place Order</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!------------------------------- 
-        Subscription Section
-    -------------------------------->
+            Subscription Section
+        -------------------------------->
     <section id="subscription">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 offset-md-1 col-12">
+          <div class="col-md-12 col-12 p-md-4">
             <div class="row align-items-center">
-              <div class="col-md-7">
+              <div class="col-md-6 col-lg-7">
                 <div class="subscribe-content">
                   <h2>Get your update news</h2>
                   <p>If you are going to use a passage of Lorem Ipsum, you need to <br>be sure there isn't anything
                     embarrassing.</p>
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-6 col-lg-5">
                 <form action="" class="subscribe-from">
                   <div class="input-group">
                     <input class="form-control subscribe-input" type="email" placeholder="Put Your Email">
@@ -1427,11 +1190,11 @@
         </div>
       </div>
     </section>
-  </main>
 
+  </main>
   <!-----------------------------
-          Footer Section 
-    ------------------------------->
+        Footer Section 
+  ------------------------------->
   <footer class="footer-section">
     <div class="footer-top">
       <div class="container">
@@ -1500,22 +1263,25 @@
     </div>
   </footer>
 
-
   <!-- Bootstrap Js Link -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <!-- Elevate Zoom -->
+  <script src="../js/jquery.elevateZoom-3.0.8.min.js"></script>
 
+  <!-- Select 2 -->
+  <script src="../js/select2.min.js"></script>
   <!-- HS Menu -->
-  <script src="js/jquery.hsmenu.min.js"></script>
-
-  <script src="js/wow.min.js"></script>
+  <script src="../js/jquery.hsmenu.min.js"></script>
+  <!-- Nice Number -->
+  <script src="../js/jquery.nice-number.min.js"></script>
   <!-- Slick Slider -->
-  <script src="js/slick.min.js"></script>
+  <script src="../js/slick.min.js"></script>
   <!-- Custom Js Link -->
-  <script src="js/custome.js"></script>
+  <script src="../js/custome.js"></script>
 </body>
 
 </html>

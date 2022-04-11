@@ -371,7 +371,6 @@ nav .main_menu li a.active_menu {
 
 .child-cat-item {
   text-align: center;
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -390,6 +389,8 @@ nav .main_menu li a.active_menu {
 	font-size: 16px;
 	font-weight: 500;
 	color: #686565;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .explore-btn {
@@ -520,6 +521,7 @@ nav .main_menu li a.active_menu {
 	border: 2px solid #686565;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+  margin: 10px;
 }
 
 .product-content {
@@ -598,10 +600,10 @@ nav .main_menu li a.active_menu {
 	padding: 15px;
 }
 
-.form-control:focus {
+.subscribe-from .form-control:focus {
 	box-shadow: none;
 	border: none;
-}
+} 
 
 .subscribe-content h2 {
 	font-size: 48px;
@@ -628,6 +630,10 @@ nav .main_menu li a.active_menu {
 }
 
 /* Product Detials Page Css */
+
+.breadcrumb-main {
+  margin-top: 20px;
+}
 
 #product-detials {
 	margin-top: 20px;
@@ -1072,7 +1078,7 @@ nav .main_menu li a.active_menu {
 
 
 /* Footer Section Css */
-.footer-section {
+.footer-top {
 	padding: 70px 0px 20px;
 	color: #000;
 }
@@ -1104,6 +1110,17 @@ nav .main_menu li a.active_menu {
 .social-icon li a {
 	padding-right: 10px;
 	font-size: 20px;
+}
+
+.footer-bottom {
+  padding: 15px;
+  background-color: #e9e9e9;
+}
+
+.footer-bottom p {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /*=========================
@@ -1385,5 +1402,50 @@ nav .main_menu li a.active_menu {
 }
 
 /*=========================
-     CART VIEW END
+     Checkout Page
 ==========================*/
+
+.left {
+  border-right: 1px solid #c8c8c8;
+  padding-right: 60px !important;
+}
+
+.right {
+  padding-left: 50px !important;
+}
+
+.order-summary,
+.order-calculation,
+.shipping-form,
+.payment-method {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 2px 5px 0px;
+  margin-bottom: 20px;
+}
+
+.order-item,
+.payment-method ul li{
+  margin: 20px 0px;
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 10px;
+}
+
+.place-order {
+  margin-top: 50px;
+}
+
+.place-order-button {
+  width: 100%;
+  padding: 15px 0;
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.checkout-section {
+  margin-bottom: 50px;
+}
