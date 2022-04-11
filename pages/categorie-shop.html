@@ -986,141 +986,308 @@
             <aside>
               <div class="filter-container border p-3 rounded">
                 <h4>Filter By</h4>
-                <div class="filter-by-price ps-3">
-                  <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdlePrice()">
-                    <h5>Price</h5>
-                    <i class="fas fa-angle-down"></i>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="filter-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Filter By Price
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+
+                        <ul class="filter-price" id="filter-by-price">
+                          <li><a href=""><span><input type="checkbox"><span>Under 100 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>100 SAR To 200 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>200 SAR To 300 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>300 SAR To 400 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>500 SAR To 600 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>600 SAR To 700 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>800 SAR To 900 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>900 SAR To 1000 SAR</span></span></a></li>
+                          <li><a href=""><span><input type="checkbox"><span>Above 1000 SAR</span></span></a></li>
+                        </ul>
+
+                        <button class="btn fivedots-filter-btn">Filter</button>
+                      </div>
+                    </div>
                   </div>
 
-                  <ul class="filter-price" id="filter-by-price">
-                    <li><a href=""><span><input type="checkbox"><span>Under 100 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>100 SAR To 200 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>200 SAR To 300 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>300 SAR To 400 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>500 SAR To 600 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>600 SAR To 700 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>800 SAR To 900 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>900 SAR To 1000 SAR</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Above 1000 SAR</span></span></a></li>
-                  </ul>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="filter-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Filter By Color
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="red">
+                          <label class="form-check-label" for="red">
+                            Red
+                          </label>
+                        </div>
 
-                  <button class="btn fivedots-filter-btn">Filter</button>
-                </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="green" checked>
+                          <label class="form-check-label" for="green">
+                            Green
+                          </label>
+                        </div>
 
-                <div class="filter-by-color mt-4 ps-3">
-                  <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdleColor()">
-                    <h5>Color</h5>
-                    <i class="fas fa-angle-down"></i>
-                  </div>
-                  <ul class="filter-color" id="filter-color">
-                    <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Blue</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Rose</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Ocene</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>samon</span></span></a></li>
-                  </ul>
-                  <button class="btn fivedots-filter-btn">Filter</button>
-                </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="color" id="black" checked>
+                          <label class="form-check-label" for="black">
+                            Black
+                          </label>
+                        </div>
 
-                <div class="filter-by-brand mt-4 ps-3">
-                  <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handdleBrand()">
-                    <h5>Brand</h5>
-                    <i class="fas fa-angle-down"></i>
+                        <button class="btn fivedots-filter-btn">Filter</button>
+                      </div>
+                    </div>
                   </div>
 
-                  <ul class="filter-brand" id="filter-brand">
-                    <li><a href=""><span><input type="checkbox"><span>Tommy</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Addidas</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Nike</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Reebok</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Puma</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Jack & Jones</span></span></a></li>
-                    <li><a href=""><span><input type="checkbox"><span>Calvan Kavin</span></span></a></li>
-                  </ul>
-                  <button class="btn fivedots-filter-btn">Filter</button>
+                  <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="filter-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Filter By Size
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="size" id="sm">
+                          <label class="form-check-label" for="sm">
+                            Small
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="size" id="green" checked>
+                          <label class="form-check-label" for="md">
+                            Medium
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="size" id="lg" checked>
+                          <label class="form-check-label" for="lg">
+                            Large
+                          </label>
+                        </div>
+
+                        <button class="btn fivedots-filter-btn">Filter</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="filter-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Filter By Brand
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand1">
+                          <label class="form-check-label" for="brand1">
+                            Addidas
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand2" checked>
+                          <label class="form-check-label" for="brand2">
+                            Medium
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand3" checked>
+                          <label class="form-check-label" for="brand3">
+                            Nike
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand4" checked>
+                          <label class="form-check-label" for="brand4">
+                            Puma
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand5" checked>
+                          <label class="form-check-label" for="brand5">
+                            Reebok
+                          </label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="brand" id="brand6" checked>
+                          <label class="form-check-label" for="brand6">
+                            Ramond
+                          </label>
+                        </div>
+
+                        <button class="btn fivedots-filter-btn">Filter</button>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </div>
-
             </aside>
           </div>
         </div>
       </div>
 
+
       <div class="row">
-        <!-- Right Siderbar -->
+        <!---------------------------------
+                Left Sidebar
+        -------------------------------->
+
         <div class="col-lg-3 siderbar d-none d-sm-none d-md-none d-lg-block">
           <aside>
             <div class="filter-container border p-3 rounded">
               <h4>Filter By</h4>
-              <div class="filter-by-price ps-3">
-                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handlePrice()">
-                  <h5>Price</h5>
-                  <i class="fas fa-angle-down"></i>
+
+              <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="filter-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                      Filter By Price
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+
+                      <ul class="filter-price" id="filter-by-price">
+                        <li><a href=""><span><input type="checkbox"><span>Under 100 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>100 SAR To 200 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>200 SAR To 300 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>300 SAR To 400 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>500 SAR To 600 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>600 SAR To 700 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>800 SAR To 900 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>900 SAR To 1000 SAR</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Above 1000 SAR</span></span></a></li>
+                      </ul>
+
+                      <button class="btn fivedots-filter-btn">Filter</button>
+                    </div>
+                  </div>
                 </div>
 
-                <ul class="filter-price" id="filter-by-price">
-                  <li><a href=""><span><input type="checkbox"><span>Under 100 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>100 SAR To 200 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>200 SAR To 300 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>300 SAR To 400 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>500 SAR To 600 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>600 SAR To 700 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>800 SAR To 900 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>900 SAR To 1000 SAR</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Above 1000 SAR</span></span></a></li>
-                </ul>
-
-                <button class="btn fivedots-filter-btn">Filter</button>
-              </div>
-
-
-              <div class="filter-by-color mt-4 ps-3">
-                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handleColor()">
-                  <h5>Color</h5>
-                  <i class="fas fa-angle-down"></i>
-                </div>
-                <ul class="filter-color" id="filter-color">
-                  <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Blue</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Rose</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Ocene</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>samon</span></span></a></li>
-                </ul>
-                <button class="btn fivedots-filter-btn">Filter</button>
-              </div>
-
-              <div class="filter-by-brand mt-4 ps-3">
-                <div id="filter-title" class="filter-title d-flex justify-content-between" onclick="handleBrand()">
-                  <h5>Brand</h5>
-                  <i class="fas fa-angle-down"></i>
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="filter-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                      Filter By Color
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <ul class="filter-color" id="filter-color">
+                        <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Blue</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Rose</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Ocene</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>samon</span></span></a></li>
+                      </ul>
+                      <button class="btn fivedots-filter-btn">Filter</button>
+                    </div>
+                  </div>
                 </div>
 
-                <ul class="filter-brand" id="filter-brand">
-                  <li><a href=""><span><input type="checkbox"><span>Tommy</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Addidas</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Nike</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Reebok</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Puma</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Jack & Jones</span></span></a></li>
-                  <li><a href=""><span><input type="checkbox"><span>Calvan Kavin</span></span></a></li>
-                </ul>
-                <button class="btn fivedots-filter-btn">Filter</button>
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="filter-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                      Filter By Size
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <ul class="filter-color" id="filter-color">
+                        <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Blue</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Rose</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Ocene</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>samon</span></span></a></li>
+                      </ul>
+                      <button class="btn fivedots-filter-btn">Filter</button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="filter-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
+                      Filter By Brand
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <ul class="filter-color" id="filter-color">
+                        <li><a href=""><span><input type="checkbox"><span>black</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Red</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>green</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Blue</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Yellow</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Rose</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>Ocene</span></span></a></li>
+                        <li><a href=""><span><input type="checkbox"><span>samon</span></span></a></li>
+                      </ul>
+                      <button class="btn fivedots-filter-btn">Filter</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
             </div>
-
           </aside>
         </div>
 
+        <!---------------------------------
+                    Products
+        -------------------------------->
         <div class="col-md-12 col-lg-9">
           <div class="row mb-5">
             <div class="col-12 d-flex justify-content-between">
@@ -1137,7 +1304,6 @@
 
           <div class="row gy-5">
             <div class="col-md-4 text-center">
-
               <div class="product-content">
                 <p class="label">30%</p>
                 <div class="proudct-img">
@@ -1301,7 +1467,9 @@
 
           </div>
         </div>
+
       </div>
+
     </section>
   </main>
 
