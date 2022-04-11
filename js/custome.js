@@ -58,14 +58,8 @@ $(function () {
     nextArrow: '<i class="fas fa-angle-right right-arrow"></i>'
   });
 
-  $('.product-container').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: false,
-    nextArrow: false
-  });
+
+
 
   // Product Image Zoom.
   // $("#img_01").elevateZoom();
@@ -79,6 +73,42 @@ $(function () {
   $('input[type="number"]').niceNumber();
 
 })
+
+$(document).ready(function () {
+  $('#product').owlCarousel({
+    loop: true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      }
+    }
+  })
+
+  $('#brand').owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 8,
+    responsive: {
+      0: {
+        items: 3
+      },
+      600: {
+        items: 4
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+
+});
 
 $(document).ready(function () {
   $('.state').select2();
