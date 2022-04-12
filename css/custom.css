@@ -1466,3 +1466,35 @@ nav .main_menu li a.active_menu {
 .checkout-section {
   margin-bottom: 50px;
 }
+
+
+/* Modal Css */
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header a i {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0px 0px 2px 3px #000;
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header .logo {
+  font-size: 28px;
+}
