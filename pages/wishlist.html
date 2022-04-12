@@ -44,11 +44,13 @@
             Dots</span></a>
         <!-- User Action -->
         <ul class="d-flex align-items-center nav-right order-3 order-sm-3 order-lg-2">
-          <li><a href="#"><img src="../images/profile.png" alt="user-profile"></a></li>
+          <li><a href="#" class="signIn" data-bs-toggle="modal" data-bs-target="#signIn"><img
+                src="../images/profile.png" alt="user-profile"></a></li>
 
           <li><a href="wishlist.html"><img src="../images/heart.png" alt="user-profile"></a></li>
 
-          <li><a href="cart.html"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
+          <li><a href="cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"><img src="../images/shopping-cart.png" alt="user-profile"></a></li>
         </ul>
       </div>
     </div>
@@ -421,6 +423,263 @@
         </div>
       </div>
     </nav>
+
+    <!---------------------------
+           SIGN IN START Modal
+    ---------------------------->
+    <section id="account">
+      <div class="container">
+        <!-- Modal For Login-->
+        <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3><span class="logo">Five Dots</span></h3>
+                <!-- <button type="button"></button> -->
+                <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
+
+                <p>Login with your email & password.</p>
+              </div>
+              <div class="modal-body">
+                <div class="row mt-3 g-3">
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                  </div>
+                  <div class="col-12">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Password">
+                  </div>
+
+                  <div class="col-12 d-flex justify-content-between">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Remember Me
+                      </label>
+                    </div>
+
+                    <a href="#" class="fs-6 fw-bold" data-bs-toggle="modal" data-bs-target="#forgetPassword">Forget
+                      Password?</a>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="login-btn">Log In</button>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <p class="login_or">Or</p>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="google-login"><i class="fab fa-google"></i> Login With Google</button>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="twitter-login"><i class="fab fa-twitter"></i> Login With Twitter</button>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="apple-login"><i class="fab fa-apple"></i> Login With Apple</button>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <p>Don't have any account? <a href="#" class="fs-6 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#signUp">Register</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal For Sign Up -->
+        <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3><span class="logo">Five Dots</span></h3>
+                <!-- <button type="button"></button> -->
+                <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
+
+                <p>By Register, you agree to our <a href="#">terms</a> & <a href="#">policy.</a></p>
+              </div>
+              <div class="modal-body">
+                <div class="row mt-3 g-3">
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                  </div>
+                  <div class="col-12">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Password">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="password" class="form-label">Confirm Password</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Confirm Password">
+                  </div>
+
+                  <div class="col-12">
+                    <button class="login-btn">Register</button>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <p class="login_or">Or</p>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="google-login"><i class="fab fa-google"></i> Login With Google</button>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="twitter-login"><i class="fab fa-twitter"></i> Login With Twitter</button>
+                  </div>
+
+                  <div class="col-12 login-with-google">
+                    <button class="apple-login"><i class="fab fa-apple"></i> Login With Apple</button>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <p>Already have an account? <a href="#" class="fs-6 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#signIn">Login</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal For Forget Password -->
+        <div class="modal fade" id="forgetPassword" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3><span class="logo">Five Dots</span></h3>
+                <!-- <button type="button"></button> -->
+                <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
+
+                <p>We'll send you a link to reset your password.</p>
+              </div>
+              <div class="modal-body forgetPassword-modal">
+                <div class="row mt-3 g-3">
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                  </div>
+
+                  <div class="col-12">
+                    <button class="login-btn">Submit Email</button>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <p class="login_or">Or</p>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <p>Back to <a href="#" class="fs-6 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#signIn">Login</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!---------------------------
+             Cart Item Off canvas
+        ---------------------------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="order-summary">
+          <div class="heading-checkout">
+            <h5>Your Order Items</h5>
+          </div>
+          <div class="row order-item">
+            <div class="col-3 text-start0">
+              <img class="rounded w-75" src="../images/product-img-2.png" alt="product">
+            </div>
+            <div class="col-6">
+              <p>Your Product Name Here</p>
+              <p>
+                <small>
+                  (Color: red, Size: SM)
+                </small>
+              </p>
+            </div>
+            <div class="col-3 text-end">
+              <p>SAR 120</p>
+              <span class="cart-item-del"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+
+          <div class="row order-item">
+            <div class="col-3">
+              <img class="rounded w-75" src="images/product-img-2.png" alt="product">
+            </div>
+            <div class="col-6">
+              <p>Your Product Name Here</p>
+              <p>
+                <small>
+                  (Color: red, Size: SM)
+                </small>
+              </p>
+            </div>
+            <div class="col-3 text-end">
+              <p>SAR 120</p>
+              <span class="cart-item-del"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+
+          <div class="row order-item">
+            <div class="col-3">
+              <img class="rounded w-75" src="images/product-img-2.png" alt="product">
+            </div>
+            <div class="col-6">
+              <p>Your Product Name Here</p>
+              <p>
+                <small>
+                  (Color: red, Size: SM)
+                </small>
+              </p>
+            </div>
+            <div class="col-3 text-end">
+              <p>SAR 120</p>
+              <span class="cart-item-del"><i class="fas fa-trash-alt"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="order-calculation">
+          <div class="row">
+            <div class="col-6">
+              <h5>Total Amount</h5>
+            </div>
+            <div class="col-6">
+              <h5 class="price-text sub-total-text text-end"> SAR 441.40 </h5>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="place-order">
+          <a href="pages/cart.html" class="place-order-button">Process To Checkout</a>
+        </div>
+
+      </div>
+    </div>
+
   </header>
 
   <div class="menu-trigger hs-menubar"> <i class="fas fa-bars"></i></div>

@@ -1459,10 +1459,25 @@ nav .main_menu li a.active_menu {
   background: #000;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 5px;
+  text-align: center;
 }
 
+.place-order-button:hover {
+  color: #fff;
+}
+
+.cart-item-del {
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cart-item-del i {
+  font-size: 16px;
+  color: red;
+}
 .checkout-section {
   margin-bottom: 50px;
 }
@@ -1485,7 +1500,7 @@ nav .main_menu li a.active_menu {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  box-shadow: 0px 0px 2px 3px #000;
+  box-shadow: 0px 0px 4px 1px #bbbbbb;
   text-align: center;
 }
 
@@ -1495,6 +1510,62 @@ nav .main_menu li a.active_menu {
   justify-content: center;
 }
 
+.modal-body {
+  height: 500px;
+  overflow-x: scroll;
+}
+
+.forgetPassword-modal {
+  height: auto;
+}
+
 .modal-header .logo {
   font-size: 28px;
+}
+
+.login-btn,
+.google-login,
+.twitter-login,
+.apple-login {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login_or {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.login_or::after {
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 0;
+  width: 45%;
+  height: 1px;
+  background-color: #dadada;
+}
+
+.login_or::before {
+  position: absolute;
+  content: '';
+  top: 13px;
+  right: 0;
+  width: 45%;
+  height: 1px;
+  background-color: #dadada;
+}
+
+.google-login {
+  background-color: #fa8729;
+}
+
+.twitter-login {
+  background-color: #55bffc;
 }
