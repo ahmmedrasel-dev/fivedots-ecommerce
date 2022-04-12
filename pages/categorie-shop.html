@@ -14,7 +14,7 @@
   <!-- Jquary Css Link -->
   <link rel="stylesheet" href="../css/jquery.nice-number.min.css">
   <!-- Price Range Slider -->
-  <link rel="stylesheet" href="../css/price_range_style.css">
+  <link rel="stylesheet" href="../css/price-range.css">
   <!-- Nice Select -->
   <link rel="stylesheet" href="../css/nice-select.css">
   <!-- hs Menu CSS-->
@@ -1261,8 +1261,8 @@
                       aria-labelledby="panelsStayOpen-headingOne">
                       <div class="accordion-body">
 
-                        <div class="price-range-wraper">
-                          <div class="price-input">
+                        <div class="price-range-wraper-sm">
+                          <div class="price-input-sm">
                             <div class="field">
                               <span>Min</span>
                               <input type="number" class="input-min" value="100">
@@ -1272,10 +1272,10 @@
                               <input type="number" class="input-max" value="7500">
                             </div>
                           </div>
-                          <div class="slider">
-                            <div class="progress"></div>
+                          <div class="slider-sm">
+                            <div class="progress-sm"></div>
                           </div>
-                          <div class="range-input">
+                          <div class="range-input-sm">
                             <input type="range" class="range-min" min="0" max="10000" value="100" step="100">
                             <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
                           </div>
@@ -1540,7 +1540,7 @@
                         <div class="price-input">
                           <div class="field">
                             <span>Min</span>
-                            <input type="number" class="input-min" value="100">
+                            <input type="number" class="input-min" value="0">
                           </div>
                           <div class="field">
                             <span>Max</span>
@@ -1556,231 +1556,235 @@
                         </div>
                       </div>
 
+
                     </div>
+
+
+
                   </div>
                 </div>
-
-                <div class="accordion-item mt-3">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="filter-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseTwo">
-                      Filter By Color <i class="fas fa-caret-down text-right"></i>
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-
-                      <ul class="filter-color" id="filter-color">
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-1">
-                            <label class="form-check-label" for="color-1">
-                              Green
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-2">
-                            <label class="form-check-label" for="color-2">
-                              Red
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-3">
-                            <label class="form-check-label" for="color-3">
-                              Blue
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-4">
-                            <label class="form-check-label" for="color-4">
-                              Yellow
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-5">
-                            <label class="form-check-label" for="color-5">
-                              Samon
-                            </label>
-                          </div>
-                        </li>
-
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="color" id="color-6">
-                            <label class="form-check-label" for="color-6">
-                              Ocene
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
-
-                      <button class="btn fivedots-filter-btn">Filter</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item mt-3">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="filter-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseThree">
-                      Filter By Size <i class="fas fa-caret-down text-right"></i>
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                      <ul class="filter-size" id="filter-size">
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-1">
-                            <label class="form-check-label" for="size-1">
-                              Small
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-2">
-                            <label class="form-check-label" for="size-2">
-                              Medium
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-3">
-                            <label class="form-check-label" for="size-3">
-                              Large
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-4">
-                            <label class="form-check-label" for="size-4">
-                              Extra Large
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-5">
-                            <label class="form-check-label" for="size-5">
-                              Extra extra large
-                            </label>
-                          </div>
-                        </li>
-
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="size" id="size-6">
-                            <label class="form-check-label" for="size-6">
-                              Extra Small
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
-                      <button class="btn fivedots-filter-btn">Filter</button>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="accordion-item mt-3">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                    <button class="filter-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseFour">
-                      Filter By Brand <i class="fas fa-caret-down text-right"></i>
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body">
-                      <ul class="filter-brand">
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-1">
-                            <label class="form-check-label" for="brand-1">
-                              Adidas
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-2">
-                            <label class="form-check-label" for="brand-2">
-                              Naki
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-3">
-                            <label class="form-check-label" for="brand-3">
-                              Reebok
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-4">
-                            <label class="form-check-label" for="brand-4">
-                              Skechers
-                            </label>
-                          </div>
-                        </li>
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-5">
-                            <label class="form-check-label" for="brand-5">
-                              New Balance
-                            </label>
-                          </div>
-                        </li>
-
-
-                        <li>
-                          <div class="form-check">
-                            <input class="form-check-input filter-select" type="radio" name="brand" id="brand-6">
-                            <label class="form-check-label" for="brand-6">
-                              Calvin Klein
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
-
-                      <button class="btn fivedots-filter-btn">Filter</button>
-                    </div>
-                  </div>
-                </div>
-
               </div>
+
+              <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="filter-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Filter By Color <i class="fas fa-caret-down text-right"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+
+                    <ul class="filter-color" id="filter-color">
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-1">
+                          <label class="form-check-label" for="color-1">
+                            Green
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-2">
+                          <label class="form-check-label" for="color-2">
+                            Red
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-3">
+                          <label class="form-check-label" for="color-3">
+                            Blue
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-4">
+                          <label class="form-check-label" for="color-4">
+                            Yellow
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-5">
+                          <label class="form-check-label" for="color-5">
+                            Samon
+                          </label>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="color" id="color-6">
+                          <label class="form-check-label" for="color-6">
+                            Ocene
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="btn fivedots-filter-btn">Filter</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="filter-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Filter By Size <i class="fas fa-caret-down text-right"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <ul class="filter-size" id="filter-size">
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-1">
+                          <label class="form-check-label" for="size-1">
+                            Small
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-2">
+                          <label class="form-check-label" for="size-2">
+                            Medium
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-3">
+                          <label class="form-check-label" for="size-3">
+                            Large
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-4">
+                          <label class="form-check-label" for="size-4">
+                            Extra Large
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-5">
+                          <label class="form-check-label" for="size-5">
+                            Extra extra large
+                          </label>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="size" id="size-6">
+                          <label class="form-check-label" for="size-6">
+                            Extra Small
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                    <button class="btn fivedots-filter-btn">Filter</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item mt-3">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="filter-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Filter By Brand <i class="fas fa-caret-down text-right"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <ul class="filter-brand">
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-1">
+                          <label class="form-check-label" for="brand-1">
+                            Adidas
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-2">
+                          <label class="form-check-label" for="brand-2">
+                            Naki
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-3">
+                          <label class="form-check-label" for="brand-3">
+                            Reebok
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-4">
+                          <label class="form-check-label" for="brand-4">
+                            Skechers
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-5">
+                          <label class="form-check-label" for="brand-5">
+                            New Balance
+                          </label>
+                        </div>
+                      </li>
+
+
+                      <li>
+                        <div class="form-check">
+                          <input class="form-check-input filter-select" type="radio" name="brand" id="brand-6">
+                          <label class="form-check-label" for="brand-6">
+                            Calvin Klein
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="btn fivedots-filter-btn">Filter</button>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </aside>
         </div>
@@ -2051,7 +2055,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  <script src="../js/price_range_script.js" type="text/javascript"></script>
+  <script src="../js/price-range.js" type="text/javascript"></script>
+  <script src="../js/price-range-sm.js" type="text/javascript"></script>
 
   <!-- Nice Select -->
   <script src="../js/jquery.nice-select.min.js"></script>
