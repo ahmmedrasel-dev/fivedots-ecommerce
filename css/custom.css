@@ -129,6 +129,11 @@ a .icon {
 }
 
 
+.top-bar-right li{
+  margin: 5px;
+}
+
+
 /* Navbar Style */
 
 .search-box-desk {
